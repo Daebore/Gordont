@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="visitor">Visitante</string>
+    <string name="local_vs_visitor">Local - Visitante</string>
+    <string name="local_won">¡Gano el equipo local!</string>
+    <string name="visitor_won">¡Ganaron los visitantes!</string>
+    <string name="it_was_a_tie">Fue un emptate 😕</string>
+</resources>
