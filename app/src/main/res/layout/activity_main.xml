@@ -27,8 +27,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Button"
-            tools:layout_editor_absoluteX="161dp"
-            tools:layout_editor_absoluteY="127dp" />
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="32dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="195dp"
+            tools:layout_editor_absoluteY="475dp"
+            tools:srcCompat="@tools:sample/avatars" />
 
     </android.support.constraint.ConstraintLayout>
 </layout>
