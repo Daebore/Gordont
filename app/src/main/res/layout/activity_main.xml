@@ -88,5 +88,12 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="62dp"
             tools:ignore="MissingConstraints" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="101dp"
+            tools:layout_editor_absoluteY="29dp" />
     </android.support.constraint.ConstraintLayout>
 </layout>
