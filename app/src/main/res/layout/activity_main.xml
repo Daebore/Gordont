@@ -45,7 +45,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:layout_editor_absoluteX="57dp"
-            tools:layout_editor_absoluteY="175dp" />
+            tools:layout_editor_absoluteY="175dp"
+            tools:ignore="MissingConstraints" />
 
     </android.support.constraint.ConstraintLayout>
 </layout>
