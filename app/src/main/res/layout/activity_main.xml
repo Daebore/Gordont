@@ -89,6 +89,14 @@
             tools:layout_editor_absoluteY="62dp"
             tools:ignore="MissingConstraints" />
 
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="101dp"
+            tools:layout_editor_absoluteY="29dp"
+            tools:ignore="MissingConstraints" />
+
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
