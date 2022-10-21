@@ -69,7 +69,32 @@
             android:layout_height="wrap_content"
             android:text="Button"
             tools:layout_editor_absoluteX="159dp"
-            tools:layout_editor_absoluteY="563dp" />
+            tools:layout_editor_absoluteY="563dp"
+            tools:ignore="MissingConstraints" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="496dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            tools:layout_editor_absoluteX="247dp"
+            tools:layout_editor_absoluteY="496dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sexo"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="442dp" />
 
 
     </android.support.constraint.ConstraintLayout>
