@@ -73,7 +73,7 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/textSexo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sexo"
@@ -82,26 +82,39 @@
             tools:ignore="MissingConstraints" />
 
 
-        <RadioButton
-            android:paddingRight="40dp"
-            android:id="@+id/radioButton"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Chico"
-            tools:layout_editor_absoluteX="50dp"
-            tools:layout_editor_absoluteY="496dp"
-            tools:ignore="MissingConstraints" />
 
-        <RadioButton
-            android:paddingRight="40dp"
-            android:id="@+id/radioButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Chica"
-            tools:layout_editor_absoluteX="247dp"
-            tools:layout_editor_absoluteY="496dp"
-            tools:ignore="MissingConstraints" />
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/textSexo"
+            tools:layout_editor_absoluteX="-48dp">
 
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:paddingRight="40dp"
+                android:text="Chico"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="496dp" />
+
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="40dp"
+                android:text="Chica"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="247dp"
+                tools:layout_editor_absoluteY="496dp" />
+
+
+        </LinearLayout>
 
 
     </android.support.constraint.ConstraintLayout>
