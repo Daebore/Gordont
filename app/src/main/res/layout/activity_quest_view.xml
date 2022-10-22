@@ -98,7 +98,7 @@
                     >
 
                     <RadioButton
-                        android:id="@+id/radioButton1"
+                        android:id="@+id/radioChico"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="35dp"
@@ -109,7 +109,7 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:layout_below="@id/radioButton1"
+                        android:layout_below="@id/radioChico"
                         android:src="@drawable/male_chad" />
 
                 </LinearLayout>
@@ -121,7 +121,7 @@
                     android:orientation="vertical">
 
                     <RadioButton
-                        android:id="@+id/radioButton2"
+                        android:id="@+id/radioChica"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="35dp"
@@ -132,7 +132,7 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
-                        android:layout_below="@id/radioButton2"
+                        android:layout_below="@id/radioChica"
                         android:src="@drawable/female" />
 
                 </LinearLayout>
