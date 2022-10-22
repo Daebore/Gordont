@@ -63,14 +63,7 @@
             tools:layout_editor_absoluteY="366dp"
             tools:text="respuesta3" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="159dp"
-            tools:layout_editor_absoluteY="563dp" />
+
 
         <TextView
             android:id="@+id/textSexo"
@@ -82,38 +75,81 @@
             tools:layout_editor_absoluteY="442dp" />
 
 
-        <LinearLayout
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            tools:layout_editor_absoluteX="-48dp"
-            tools:layout_editor_absoluteY="466dp"
-            tools:ignore="MissingConstraints">
+            app:layout_constraintTop_toBottomOf="@+id/textSexo">
 
-            <RadioButton
-                android:id="@+id/radioButton"
-                android:layout_width="wrap_content"
+
+            <RadioGroup
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="50dp"
-                android:paddingRight="40dp"
-                android:text="Chico"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="50dp"
-                tools:layout_editor_absoluteY="496dp" />
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
 
 
-            <RadioButton
-                android:id="@+id/radioButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingRight="40dp"
-                android:text="Chica"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="247dp"
-                tools:layout_editor_absoluteY="496dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Chico"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_below="@id/radioButton1"
+                        android:src="@drawable/male_chad" />
+
+                </LinearLayout>
 
 
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Chica"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_below="@id/radioButton2"
+                        android:src="@drawable/female" />
+
+                </LinearLayout>
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="161dp" />
 
 
     </android.support.constraint.ConstraintLayout>
