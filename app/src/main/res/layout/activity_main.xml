@@ -10,84 +10,123 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/BackgroundOrange4"
         tools:context=".MainActivity">
 
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bienvenido"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="110dp"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="76dp"
-            android:text="Tu peso es de"
-            android:textSize="20sp"
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="@color/orange"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="0000"
-            android:textSize="26sp"
+            <Button
+                android:id="@+id/button_Burger"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="372dp"
+                android:background="@drawable/burguer1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.987"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="654dp"
+            android:layout_height="202dp"
+            android:layout_marginTop="72dp"
+            android:src="@drawable/header"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="26sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="402dp"
-            tools:text="Tools:Cronometro"
-            tools:ignore="MissingConstraints" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Start"
+        <RelativeLayout
+            android:layout_width="353dp"
+            android:layout_height="412dp"
+            android:background="@drawable/custom_layout"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.896">
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Estas Gordon't"
-            android:textSize="26sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="159dp"
+                android:layout_height="65dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="92dp"
+                android:gravity="center"
+                android:text="Bienvenido"
+                android:textSize="25sp" />
 
-        <Button
-            android:id="@+id/button_Burger"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Burger"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="62dp"
-            tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="157dp"
+                android:layout_marginBottom="255dp"
+                android:text="Tu peso actual es:"
+                android:textSize="20sp" />
 
-       </android.support.constraint.ConstraintLayout>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="179dp"
+                android:layout_marginEnd="7dp"
+                android:background="@color/white"
+                android:text="66 kilos"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="236dp"
+                android:layout_marginEnd="65dp"
+                android:layout_marginBottom="122dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                tools:text="Contabilizar horas de sueño" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="127dp"
+                android:layout_marginEnd="128dp"
+                android:layout_marginBottom="55dp"
+                android:background="@drawable/custom_button"
+                android:text="Empezar" />
+
+        </RelativeLayout>
+
+    </android.support.constraint.ConstraintLayout>
 </layout>
