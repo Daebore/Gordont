@@ -7,6 +7,10 @@ import com.backendstreetboys.gordont.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    public static final String EL_IMC = "imc";
+    public static final String EL_MENSAJE = "mensaje";
+
     private ActivityMainBinding binding;
 
     @Override
@@ -17,11 +21,17 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(binding.getRoot());
 
-        binding.buttonBurger.setOnClickListener(v ->{
+        Bundle extras = getIntent().getExtras();
 
-        });
+        double imc = extras.getDouble(EL_IMC);
+        String mensaje = extras.getString(EL_MENSAJE);
+
+        String texto_imc = String.valueOf(imc);
+
+        binding.IMCtext.setText(texto_imc);
+        binding.MENSAJEtext.setText(mensaje);
 
 
-        setContentView(R.layout.activity_main);
+
     }
 }

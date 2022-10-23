@@ -86,13 +86,25 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/IMCtext"
                 android:layout_width="341dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="179dp"
                 android:layout_marginEnd="7dp"
+                android:background="@color/white"
+                android:text="66 kilos"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/MENSAJEtext"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="216dp"
+                android:layout_marginEnd="6dp"
                 android:background="@color/white"
                 android:text="66 kilos"
                 android:textSize="20sp" />
@@ -106,15 +118,15 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="64dp"
-                android:layout_marginTop="236dp"
+                android:layout_marginTop="250dp"
                 android:layout_marginEnd="65dp"
-                android:layout_marginBottom="122dp"
+                android:layout_marginBottom="108dp"
                 android:gravity="center"
                 android:textSize="20sp"
                 tools:text="Contabilizar horas de sueño" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/ButtonSuenyo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"

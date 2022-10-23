@@ -1,23 +1,42 @@
 package com.backendstreetboys.gordont;
 
-public class Persona {
+import android.os.Parcelable;
+
+import org.w3c.dom.ls.LSOutput;
+
+public class Persona  {
 
     protected   double altura;
     protected double peso;
     protected  int edad;
-    protected  boolean sexo;
 
 
-    public Persona(double altura, double peso, int edad, boolean sexo) {
+
+    public Persona(double altura, double peso, int edad) {
         this.altura = altura;
         this.peso = peso;
         this.edad = edad;
-        this.sexo = sexo;
+
     }
 
-    public double getAltura() {
-        return altura;
+
+    public double resultadoOperacion(Persona persona){
+
+        double resultado = peso * (altura * altura);
+
+        return resultado;
+
+
+
     }
+
+
+
+
+
+
+
+    public double getAltura() {return altura;}
 
     public void setAltura(double altura) {
         this.altura = altura;
@@ -39,11 +58,5 @@ public class Persona {
         this.edad = edad;
     }
 
-    public boolean isSexo() {
-        return sexo;
-    }
 
-    public void setSexo(boolean sexo) {
-        this.sexo = sexo;
-    }
 }
