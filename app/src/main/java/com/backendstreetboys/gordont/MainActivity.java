@@ -8,6 +8,7 @@ import com.backendstreetboys.gordont.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
 
 
+    /*
     public static final String EL_IMC = "imc";
     public static final String EL_MENSAJE = "mensaje";
 
@@ -34,4 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
+     */
 }

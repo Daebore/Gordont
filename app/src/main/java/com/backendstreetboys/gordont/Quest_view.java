@@ -7,7 +7,7 @@ import android.os.Bundle;
 import com.backendstreetboys.gordont.databinding.ActivityQuestViewBinding;
 
 public class Quest_view extends AppCompatActivity {
-
+/*
     private ActivityQuestViewBinding binding;
 
     Persona persona;
@@ -98,7 +98,7 @@ public class Quest_view extends AppCompatActivity {
     }
 
 
-
+*/
 
 
 
