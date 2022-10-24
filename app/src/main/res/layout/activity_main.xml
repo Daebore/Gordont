@@ -10,7 +10,7 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/backgroundorange4"
+        android:background="@color/light_black"
         tools:context=".MainActivity">
 
         <RelativeLayout
@@ -43,7 +43,7 @@
             android:layout_width="654dp"
             android:layout_height="202dp"
             android:layout_marginTop="72dp"
-            android:src="@drawable/header"
+            android:src="@drawable/headerjarjar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -93,7 +93,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="179dp"
                 android:layout_marginEnd="7dp"
-                android:background="@color/white"
+                android:background="@drawable/custom_textview"
                 android:text="66 kilos"
                 android:textSize="20sp" />
 
@@ -105,7 +105,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="216dp"
                 android:layout_marginEnd="6dp"
-                android:background="@color/white"
+                android:background="@drawable/custom_textview"
                 android:text="66 kilos"
                 android:textSize="20sp" />
 
