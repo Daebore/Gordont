@@ -13,6 +13,9 @@
         android:background="@color/light_black"
         tools:context=".MainActivity">
 
+
+
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="39dp"
