@@ -56,7 +56,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.896">
+            app:layout_constraintVertical_bias="0.899">
 
             <TextView
                 android:id="@+id/textView"
@@ -68,10 +68,10 @@
                 android:layout_marginStart="92dp"
                 android:layout_marginTop="3dp"
                 android:layout_marginEnd="92dp"
-                android:textColor="@color/black"
                 android:fontFamily="@font/open_sans_bold"
                 android:gravity="center"
                 android:text="Bienvenido"
+                android:textColor="@color/black"
                 android:textSize="30sp" />
 
             <TextView
@@ -84,9 +84,9 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginEnd="157dp"
                 android:layout_marginBottom="255dp"
-                android:textColor="@color/black"
-                android:text="Tu peso actual es:"
                 android:fontFamily="@font/open_sans"
+                android:text="Tu peso actual es:"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <TextView
@@ -98,9 +98,9 @@
                 android:layout_marginTop="179dp"
                 android:layout_marginEnd="7dp"
                 android:background="@drawable/custom_textview"
-                android:textColor="@color/black"
-                android:text="66 kilos"
                 android:fontFamily="@font/open_sans"
+                android:hint="66 kilos"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <TextView
@@ -112,9 +112,9 @@
                 android:layout_marginTop="216dp"
                 android:layout_marginEnd="6dp"
                 android:background="@drawable/custom_textview"
-                android:textColor="@color/black"
-                android:text="66 kilos"
                 android:fontFamily="@font/open_sans"
+                android:hint="66 kilos"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <TextView
@@ -129,9 +129,9 @@
                 android:layout_marginTop="250dp"
                 android:layout_marginEnd="65dp"
                 android:layout_marginBottom="108dp"
+                android:fontFamily="@font/open_sans"
                 android:gravity="center"
                 android:textColor="@color/black"
-                android:fontFamily="@font/open_sans"
                 android:textSize="20sp"
                 tools:text="Contabilizar horas de sueño" />
 
@@ -145,10 +145,10 @@
                 android:layout_marginStart="127dp"
                 android:layout_marginEnd="128dp"
                 android:layout_marginBottom="55dp"
-                android:textColor="@color/black"
                 android:background="@drawable/custom_button"
                 android:fontFamily="@font/open_sans"
-                android:text="Empezar" />
+                android:text="Empezar"
+                android:textColor="@color/black" />
 
         </RelativeLayout>
 
