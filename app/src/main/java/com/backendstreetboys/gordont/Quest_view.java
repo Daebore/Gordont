@@ -7,7 +7,7 @@ import android.os.Bundle;
 import com.backendstreetboys.gordont.databinding.ActivityQuestViewBinding;
 
 public class Quest_view extends AppCompatActivity {
-
+/*
     private ActivityQuestViewBinding binding;
 
     @Override
@@ -26,26 +26,20 @@ public class Quest_view extends AppCompatActivity {
 
     }
 }
+*/
 
-/*
-    private ActivityQuestViewBinding binding;
+    public ActivityQuestViewBinding binding;
 
     Persona persona;
 
-    String peso = binding.editPeso.getText().toString();
-    String altura = binding.editAltura.getText().toString();
-    String edad = binding.editEdad.getText().toString();
 
 
-    double doubleAltura = Integer.parseInt(altura);
-    double doublePeso = Integer.parseInt(peso);
-    int intEdad = Integer.parseInt(edad);
 
 
-    double IMC = operacionIMC(doublePeso, doubleAltura, intEdad);
 
 
-    String mensajeFinal = resultadoMensaje(IMC);
+
+
 
 
     @Override
@@ -56,10 +50,26 @@ public class Quest_view extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         binding.ButtonSave.setOnClickListener( v -> {
+            String peso = binding.editPeso.getText().toString();
+            String altura = binding.editAltura.getText().toString();
+            String edad = binding.editEdad.getText().toString();
 
-            operacionIMC(doublePeso, doubleAltura, intEdad);
 
-            resultadoMensaje(IMC);
+            double doubleAltura = Double.parseDouble(altura);
+            double doublePeso = Double.parseDouble(peso);
+            int intEdad = Integer.parseInt(edad);
+
+
+
+
+            double IMC = operacionIMC(doublePeso, doubleAltura);
+
+
+
+
+
+
+            String mensajeFinal = resultadoMensaje(IMC);
 
             openMainActivity(IMC, mensajeFinal);
 
@@ -71,13 +81,14 @@ public class Quest_view extends AppCompatActivity {
 
 
 
-    public double operacionIMC(double doubleAltura, double doublePeso, int intEdad){
+    public double operacionIMC(double doubleAltura, double doublePeso){
 
-        Persona persona = new Persona(doubleAltura, doublePeso, intEdad);
 
-        double IMC = persona.resultadoOperacion(persona);
 
-        return IMC;
+        double resultado = doublePeso * (doubleAltura * doubleAltura);
+
+
+        return resultado;
 
     }
 
@@ -125,4 +136,3 @@ public class Quest_view extends AppCompatActivity {
 
 }
 
-*/

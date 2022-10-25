@@ -5,7 +5,7 @@ import android.os.Parcelable;
 import org.w3c.dom.ls.LSOutput;
 
 public class Persona  {
-/*
+
     protected   double altura;
     protected double peso;
     protected  int edad;
@@ -59,6 +59,6 @@ public class Persona  {
     }
 
 
- */
+
 
 }
