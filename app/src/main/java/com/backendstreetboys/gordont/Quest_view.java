@@ -3,6 +3,8 @@ package com.backendstreetboys.gordont;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.Toast;
 
 import com.backendstreetboys.gordont.databinding.ActivityQuestViewBinding;
 
@@ -30,14 +32,6 @@ public class Quest_view extends AppCompatActivity {
 
     public ActivityQuestViewBinding binding;
 
-    Persona persona;
-
-
-
-
-
-
-
 
 
 
@@ -55,26 +49,32 @@ public class Quest_view extends AppCompatActivity {
             String edad = binding.editEdad.getText().toString();
 
 
-            double doubleAltura = Double.parseDouble(altura);
-            double doublePeso = Double.parseDouble(peso);
-            int intEdad = Integer.parseInt(edad);
+
+            if (peso.isEmpty() || altura.isEmpty() || edad.isEmpty()){
+
+                Log.d("Quest_view" , "La altura, peso o edad estan vacios");
+
+                Toast.makeText(this, "El peso, la altura o la edad no pueden estar vacios", Toast.LENGTH_SHORT).show();
+
+            }
+            else {
 
 
+                double doubleAltura = Double.parseDouble(altura);
+                double doublePeso = Double.parseDouble(peso);
+                int intEdad = Integer.parseInt(edad);
 
 
-            double IMC = operacionIMC(doublePeso, doubleAltura);
+                double IMC = operacionIMC(doublePeso, doubleAltura);
 
 
+                String mensajeFinal = resultadoMensaje(IMC);
+
+                openMainActivity(IMC, mensajeFinal);
 
 
-
-
-            String mensajeFinal = resultadoMensaje(IMC);
-
-            openMainActivity(IMC, mensajeFinal);
-
-
-            setContentView(R.layout.activity_main);
+                setContentView(R.layout.activity_main);
+            }
 
         });
 
