@@ -74,9 +74,10 @@ public class Quest_view extends AppCompatActivity {
             openMainActivity(IMC, mensajeFinal);
 
 
+            setContentView(R.layout.activity_main);
+
         });
 
-        setContentView(R.layout.activity_quest_view);
     }
 
 
