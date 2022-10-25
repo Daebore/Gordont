@@ -136,7 +136,7 @@
                 android:gravity="center"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                tools:text="Contabilizar horas de sueño" />
+                android:text="Contabilizar horas de sueño" />
 
             <Button
                 android:id="@+id/ButtonSuenyo"
