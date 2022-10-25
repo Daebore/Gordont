@@ -10,8 +10,9 @@ public class Persona  {
     protected double peso;
     protected  int edad;
 
-
-
+    /*
+    Hola buenas tardes nos dé Dios
+*/
     public Persona(double altura, double peso, int edad) {
         this.altura = altura;
         this.peso = peso;
