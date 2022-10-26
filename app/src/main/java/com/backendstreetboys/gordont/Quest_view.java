@@ -101,13 +101,13 @@ public class Quest_view extends AppCompatActivity {
         if (resultado <  18.5){
             mensaje = "Tu estas gordon't ";
         }
-        else if (resultado > 18.5 || resultado < 24.9){
+        else if (resultado > 18.5 && resultado < 24.9){
             mensaje = "Tu estas chad ";
         }
-        else if (resultado > 25.0  || resultado < 29.9){
+        else if (resultado > 25.0  && resultado < 29.9){
             mensaje = "Tu estas gordo ";
         }
-        else if (resultado > 30.0  || resultado < 39.9){
+        else if (resultado > 30.0  && resultado < 39.9){
             mensaje = "Tu estas MUY GORDO ";
         }
         else if (resultado > 40.0 ){
