@@ -4,24 +4,16 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.backendstreetboys.gordont.databinding.ActivityQuestViewBinding;
 
 public class Quest_view extends AppCompatActivity {
-/*
-    private ActivityQuestViewBinding binding;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        binding = ActivityQuestViewBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-        binding.ButtonSave.setOnClickListener(v -> {
-            setContentView(R.layout.activity_quest_view);
-        });
-    }
-}
-*/
+
+    EditText etNombre, etAltura, etPeso;
+    Button etSave;
 
     public ActivityQuestViewBinding binding;
 
@@ -35,6 +27,11 @@ public class Quest_view extends AppCompatActivity {
 
         binding = ActivityQuestViewBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        etNombre = findViewById(R.id.editNombre);
+        etAltura = findViewById(R.id.editAltura);
+        etPeso = findViewById(R.id.editPeso);
+
 
         binding.ButtonSave.setOnClickListener( v -> {
             String peso = binding.editPeso.getText().toString();
