@@ -11,21 +11,14 @@ import com.backendstreetboys.gordont.databinding.ActivityQuestViewBinding;
 public class Quest_view extends AppCompatActivity {
 /*
     private ActivityQuestViewBinding binding;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         binding = ActivityQuestViewBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         binding.ButtonSave.setOnClickListener(v -> {
-
-
             setContentView(R.layout.activity_quest_view);
-
         });
-
     }
 }
 */
