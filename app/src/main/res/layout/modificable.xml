@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="ui.principal.PrincipalFragment"
+        android:background="@color/light_black">
+
+
+        <ImageView
+            android:id="@+id/imageViewJabaJar"
+            android:layout_width="654dp"
+            android:layout_height="202dp"
+            android:layout_marginTop="72dp"
+            android:src="@drawable/header2app"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="353dp"
+            android:layout_height="412dp"
+            android:background="@drawable/custom_layout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.902">
+
+            <TextView
+                android:id="@+id/textViewActAlt"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginEnd="152dp"
+                android:layout_marginBottom="173dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Tu altura actual es:"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewAct"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="83dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="92dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:gravity="center"
+                android:text="Actualiza tus datos"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textViewActPeso"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginEnd="152dp"
+                android:layout_marginBottom="267dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Tu peso actual es:"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/pesoAct"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="164dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/custom_textview"
+                android:fontFamily="@font/open_sans"
+                android:hint="66 kilos"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/alturaAct"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="256dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/custom_textview"
+                android:fontFamily="@font/open_sans"
+                android:hint="1.70 kilos"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/ButtonAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="127dp"
+                android:layout_marginEnd="128dp"
+                android:layout_marginBottom="55dp"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/open_sans"
+                android:text="Actualizar"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

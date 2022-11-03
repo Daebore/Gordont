@@ -7,24 +7,24 @@ import com.backendstreetboys.gordont.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
-/*
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    /*
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_main);
-        setContentView(binding.getRoot());
+            setContentView(R.layout.activity_main);
+            setContentView(binding.getRoot());
 
-    }
+        }
 
-   */
+       */
     public static final String EL_IMC = "imc";
     public static final String EL_MENSAJE = "mensaje";
 
 
     /*
-    * hola javi
-    * */
+     * hola javi
+     * */
 
 
     @Override
