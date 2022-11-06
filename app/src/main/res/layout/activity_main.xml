@@ -7,7 +7,7 @@
 
     </data>
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity"
@@ -17,25 +17,25 @@
             android:id="@+id/imageView"
             android:layout_width="654dp"
             android:layout_height="202dp"
-            android:layout_marginTop="72dp"
             android:src="@drawable/headerjarjar"
             app:layout_constraintBottom_toTopOf="@+id/relativeLayout5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.38" />
 
         <RelativeLayout
             android:id="@+id/relativeLayout5"
-            android:layout_width="353dp"
-            android:layout_height="412dp"
+            android:layout_width="346dp"
+            android:layout_height="390dp"
             android:background="@drawable/custom_layout"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.899">
+            app:layout_constraintVertical_bias="0.715">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -97,9 +97,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="151dp"
-                android:layout_marginBottom="188dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginEnd="152dp"
+                android:layout_marginBottom="181dp"
                 android:fontFamily="@font/open_sans"
                 android:text="Tu IMC actual es:"
                 android:textColor="@color/black"
@@ -135,21 +135,21 @@
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="46dp"
+                android:layout_width="252dp"
+                android:layout_height="38dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="65dp"
-                android:layout_marginTop="292dp"
-                android:layout_marginEnd="64dp"
-                android:layout_marginBottom="66dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="291dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginBottom="61dp"
                 android:fontFamily="@font/open_sans"
                 android:gravity="center"
                 android:text="Contabilizar horas de sueño"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/ButtonSuenyo"
@@ -160,7 +160,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="126dp"
                 android:layout_marginEnd="129dp"
-                android:layout_marginBottom="14dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_button"
                 android:fontFamily="@font/open_sans"
                 android:text="Empezar"
@@ -168,5 +168,67 @@
 
         </RelativeLayout>
 
-    </android.support.constraint.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_footer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout5"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ImageButton
+                android:id="@+id/ButtonHome"
+                android:layout_width="91dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="274dp"
+                android:layout_marginBottom="-1dp"
+                android:background="@drawable/home"
+                android:fontFamily="@font/open_sans"
+                android:text="hola"
+                android:textSize="18dp" />
+
+            <ImageButton
+                android:id="@+id/ButtonDietasEjercicios"
+                android:layout_width="78dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="274dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="59dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/fitness"
+                android:fontFamily="@font/open_sans"
+                android:textSize="18dp" />
+
+            <ImageButton
+                android:id="@+id/ButtonModificarPerfil"
+                android:layout_width="78dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="168dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="165dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/modperfil"
+                android:fontFamily="@font/open_sans"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

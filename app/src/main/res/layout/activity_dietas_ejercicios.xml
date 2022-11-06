@@ -7,7 +7,7 @@
 
     </data>
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".DietasEjercicios"
@@ -23,18 +23,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.83" />
+            app:layout_constraintVertical_bias="0.301" />
 
         <RelativeLayout
             android:id="@+id/relativeLayout3"
             android:layout_width="353dp"
-            android:layout_height="412dp"
+            android:layout_height="350dp"
             android:background="@drawable/custom_layout"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.902">
+            app:layout_constraintVertical_bias="0.74">
 
             <TextView
                 android:id="@+id/textPonerseForma"
@@ -55,14 +55,14 @@
 
             <TextView
                 android:id="@+id/textElegir"
-                android:layout_width="182dp"
+                android:layout_width="166dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="81dp"
-                android:layout_marginEnd="80dp"
-                android:layout_marginBottom="267dp"
+                android:layout_marginStart="96dp"
+                android:layout_marginEnd="91dp"
+                android:layout_marginBottom="239dp"
                 android:fontFamily="@font/open_sans"
                 android:text="Elige una opción:"
                 android:textColor="@color/black"
@@ -75,12 +75,11 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="195dp"
-                android:layout_marginBottom="73dp"
-                android:fontFamily="@font/open_sans"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="194dp"
+                android:layout_marginBottom="46dp"
                 android:background="@drawable/comida2"
-                android:textColor="@color/black" />
+                android:fontFamily="@font/open_sans" />
 
             <TextView
                 android:id="@+id/textDescargarDieta"
@@ -89,9 +88,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="34dp"
-                android:layout_marginEnd="194dp"
-                android:layout_marginBottom="199dp"
+                android:layout_marginStart="39dp"
+                android:layout_marginEnd="189dp"
+                android:layout_marginBottom="172dp"
                 android:fontFamily="@font/open_sans"
                 android:gravity="center"
                 android:text="Descargar\ndieta"
@@ -105,12 +104,11 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="194dp"
-                android:layout_marginEnd="36dp"
-                android:layout_marginBottom="73dp"
+                android:layout_marginStart="195dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="46dp"
                 android:background="@drawable/gym2"
-                android:fontFamily="@font/open_sans"
-                android:textColor="@color/black" />
+                android:fontFamily="@font/open_sans" />
 
             <TextView
                 android:id="@+id/textDescargarRutina"
@@ -119,20 +117,79 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="195dp"
-                android:layout_marginEnd="33dp"
-                android:layout_marginBottom="201dp"
+                android:layout_marginStart="193dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="171dp"
                 android:fontFamily="@font/open_sans"
-                android:text="Descargar rutina de ejercicios"
                 android:gravity="center"
+                android:text="Descargar rutina de ejercicios"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_footer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout5"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ImageButton
+                android:id="@+id/ButtonHome"
+                android:layout_width="91dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="274dp"
+                android:layout_marginBottom="-1dp"
+                android:background="@drawable/home"
+                android:fontFamily="@font/open_sans"
+                android:text="hola"
+                android:textSize="18dp" />
+
+            <ImageButton
+                android:id="@+id/ButtonDietasEjercicios"
+                android:layout_width="78dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="274dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="59dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/fitness"
+                android:fontFamily="@font/open_sans"
+                android:textSize="18dp" />
+
+            <ImageButton
+                android:id="@+id/ButtonModificarPerfil"
+                android:layout_width="78dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="168dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="165dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/modperfil"
+                android:fontFamily="@font/open_sans"
+                android:textSize="18dp" />
 
         </RelativeLayout>
 
-
-    </android.support.constraint.ConstraintLayout>
-
+    </androidx.constraintlayout.widget.ConstraintLayout>>
 
 </layout>
