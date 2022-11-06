@@ -3,6 +3,7 @@ package com.backendstreetboys.gordont;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.backendstreetboys.gordont.databinding.ActivityMainBinding;
 
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         binding.ButtonDietasEjercicios.setOnClickListener(v -> {
+            Log.d("MainActivity", "LLENGO A DIETAS EJERCICIOS");
           openDietasEjercicios();
           //  setContentView(R.layout.activity_dietas_ejercicios);
         });
