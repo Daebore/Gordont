@@ -1,14 +1,21 @@
 package com.backendstreetboys.gordont;
 
 import android.content.Intent;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.RequiresApi;
+import androidx.room.Room;
+
 import com.backendstreetboys.gordont.databinding.ActivityQuestViewBinding;
+
+import java.time.LocalDate;
 
 public class Quest_view extends AppCompatActivity {
 
@@ -31,6 +38,9 @@ public class Quest_view extends AppCompatActivity {
         etNombre = findViewById(R.id.editNombre);
         etAltura = findViewById(R.id.editAltura);
         etPeso = findViewById(R.id.editPeso);
+        etSave = findViewById(R.id.ButtonSave);
+
+
 
 
         binding.ButtonSave.setOnClickListener( v -> {
