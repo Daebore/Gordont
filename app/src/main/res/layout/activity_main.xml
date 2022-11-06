@@ -84,7 +84,7 @@
                     android:layout_marginEnd="104dp"
                     android:fontFamily="@font/open_sans_bold"
                     android:gravity="center"
-                    android:text="Usuario"
+                    tools:text="Usuario"
                     android:textColor="@color/black"
                     android:textSize="22sp" />
 

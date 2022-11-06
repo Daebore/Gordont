@@ -10,8 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.annotation.RequiresApi;
-import androidx.room.Room;
+//import androidx.annotation.RequiresApi;
+//import androidx.room.Room;
 
 import com.backendstreetboys.gordont.databinding.ActivityQuestViewBinding;
 
@@ -34,12 +34,12 @@ public class Quest_view extends AppCompatActivity {
 
         binding = ActivityQuestViewBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
+/*
         etNombre = findViewById(R.id.editNombre);
         etAltura = findViewById(R.id.editAltura);
         etPeso = findViewById(R.id.editPeso);
         etSave = findViewById(R.id.ButtonSave);
-
+*/
 
 
 
@@ -47,10 +47,10 @@ public class Quest_view extends AppCompatActivity {
             String peso = binding.editPeso.getText().toString();
             String altura = binding.editAltura.getText().toString();
             String edad = binding.editEdad.getText().toString();
+            String nombre = binding.editNombre.getText().toString();
 
 
-
-            if (peso.isEmpty() || altura.isEmpty() || edad.isEmpty()){
+            if (peso.isEmpty() || altura.isEmpty() || edad.isEmpty() || nombre.isEmpty()){
 
                 Log.d("Quest_view" , "La altura, peso o edad estan vacios");
 
@@ -70,7 +70,7 @@ public class Quest_view extends AppCompatActivity {
 
                 String mensajeFinal = resultadoMensaje(IMC);
 
-                openMainActivity(IMC, mensajeFinal);
+                openMainActivity(IMC, mensajeFinal, nombre);
 
 
                 setContentView(R.layout.activity_main);
@@ -118,12 +118,13 @@ public class Quest_view extends AppCompatActivity {
 
     }
 
-    public void openMainActivity(double IMC, String mensajeFinal){
+    public void openMainActivity(double IMC, String mensajeFinal, String nombre){
 
         Intent intent = new Intent(this, MainActivity.class);
 
         intent.putExtra(MainActivity.EL_IMC, IMC);
         intent.putExtra(MainActivity.EL_MENSAJE, mensajeFinal);
+        intent.putExtra(MainActivity.EL_NOMBRE,nombre);
 
         startActivity(intent);
 
