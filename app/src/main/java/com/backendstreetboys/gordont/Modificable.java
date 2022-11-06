@@ -17,7 +17,7 @@ public class Modificable extends AppCompatActivity {
 
         binding = ActivityModificableBinding.inflate(getLayoutInflater());
 
-        setContentView(R.layout.activity_modificable);
+        setContentView(binding.getRoot());
 
         binding.ButtonDietasEjercicios.setOnClickListener(v -> {
             openDietasEjercicios();

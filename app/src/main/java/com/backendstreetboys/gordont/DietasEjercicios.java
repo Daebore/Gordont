@@ -17,7 +17,7 @@ public class DietasEjercicios extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Log.d("DietasEjercicios", "HOLA EJERCICIOS uwu");
         binding = ActivityDietasEjerciciosBinding.inflate(getLayoutInflater());
-
+        setContentView(binding.getRoot());
 
         Log.d("DietasEjercicios", "EL BINDING YA ESTA HECHO");
 
@@ -33,7 +33,7 @@ public class DietasEjercicios extends AppCompatActivity {
 
            // setContentView(R.layout.activity_main);
         });
-        setContentView(R.layout.activity_dietas_ejercicios);
+
     }
 
     public void openModificable(){
