@@ -45,8 +45,8 @@ public class Quest_view extends AppCompatActivity {
 
         binding.ButtonSave.setOnClickListener( v -> {
             String peso = binding.editPeso.getText().toString();
-            String altura = binding.editAltura.getText().toString();
-            String edad = binding.editEdad.getText().toString();
+          final  String altura = binding.editAltura.getText().toString();
+          final  String edad = binding.editEdad.getText().toString();
             String nombre = binding.editNombre.getText().toString();
 
 
@@ -65,7 +65,7 @@ public class Quest_view extends AppCompatActivity {
                 int intEdad = Integer.parseInt(edad);
 
 
-                double IMC = operacionIMC(doublePeso, doubleAltura);
+                double IMC = operacionIMC(doubleAltura, doublePeso);
 
 
                 String mensajeFinal = resultadoMensaje(IMC);
@@ -84,9 +84,18 @@ public class Quest_view extends AppCompatActivity {
 
     public double operacionIMC(double doubleAltura, double doublePeso){
 
+        System.out.println(" El peso es de" + doublePeso);
 
+        System.out.println("La altura es de " + doubleAltura);
 
-        double resultado = doublePeso * (doubleAltura * doubleAltura);
+        double alturaCuadrado = doubleAltura * doubleAltura;
+
+        System.out.println("La altura ^2 es " + alturaCuadrado);
+
+        double resultado =  doublePeso /  alturaCuadrado ;
+
+        System.out.println( "El resultado es de " + resultado);
+
 
 
         return resultado;
