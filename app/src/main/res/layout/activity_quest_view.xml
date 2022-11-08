@@ -16,8 +16,9 @@
         android:background="@color/light_black">
 
         <TextView
-            android:layout_width="350dp"
-            android:layout_height="80dp"
+            android:id="@+id/textView3"
+            android:layout_width="345dp"
+            android:layout_height="59dp"
             android:background="@drawable/custom_photo"
             android:fontFamily="@font/open_sans_bold"
             android:gravity="center"
@@ -29,9 +30,16 @@
             app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
+            app:layout_constraintVertical_bias="0.0"/>
 
-        </TextView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:background="@drawable/redsable"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <RelativeLayout
             android:id="@+id/relativeLayout2"

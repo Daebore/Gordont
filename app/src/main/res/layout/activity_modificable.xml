@@ -141,52 +141,48 @@
 
             <ImageButton
                 android:id="@+id/ButtonHome"
-                android:layout_width="91dp"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="46dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="274dp"
-                android:layout_marginBottom="-1dp"
-                android:background="@drawable/home"
-                android:fontFamily="@font/open_sans"
-                android:text="hola"
-                android:textSize="18dp" />
+                android:layout_marginStart="62dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="283dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/home3"
+                android:fontFamily="@font/open_sans" />
 
             <ImageButton
                 android:id="@+id/ButtonDietasEjercicios"
-                android:layout_width="78dp"
-                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="274dp"
-                android:layout_marginTop="6dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="59dp"
                 android:layout_marginBottom="4dp"
-                android:background="@drawable/fitness"
-                android:fontFamily="@font/open_sans"
-                android:textSize="18dp" />
+                android:background="@drawable/rutinas2"
+                android:fontFamily="@font/open_sans" />
 
             <ImageButton
                 android:id="@+id/ButtonModificarPerfil"
-                android:layout_width="78dp"
-                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="168dp"
-                android:layout_marginTop="6dp"
-                android:layout_marginEnd="165dp"
+                android:layout_marginStart="173dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="171dp"
                 android:layout_marginBottom="4dp"
-                android:background="@drawable/modperfil"
-                android:fontFamily="@font/open_sans"
-                android:textSize="18dp" />
+                android:background="@drawable/edit2"
+                android:fontFamily="@font/open_sans" />
 
         </RelativeLayout>
 
