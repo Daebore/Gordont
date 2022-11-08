@@ -187,7 +187,7 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="171dp"
                 android:layout_marginBottom="4dp"
-                android:background="@drawable/edit2"
+                android:background="@drawable/edit2_activo"
                 android:fontFamily="@font/open_sans" />
 
         </RelativeLayout>
