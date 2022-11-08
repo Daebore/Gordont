@@ -54,13 +54,25 @@ public class Quest_view extends AppCompatActivity {
 
                 Log.d("Quest_view" , "La altura, peso o edad estan vacios");
 
-                Toast.makeText(this, "El peso, la altura o la edad no pueden estar vacios", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "El peso, la altura , la edad o el nombre no pueden estar vacios", Toast.LENGTH_SHORT).show();
 
             }
             else {
 
 
                 double doubleAltura = Double.parseDouble(altura);
+
+                if (doubleAltura >3){
+
+                    Toast.makeText(this, "La altura tiene que ser en metros", Toast.LENGTH_SHORT).show();
+
+
+                }else{
+
+
+
+
+
                 double doublePeso = Double.parseDouble(peso);
                 int intEdad = Integer.parseInt(edad);
 
@@ -75,7 +87,7 @@ public class Quest_view extends AppCompatActivity {
 
                 setContentView(R.layout.activity_main);
             }
-
+        }
         });
 
     }
