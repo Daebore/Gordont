@@ -9,6 +9,7 @@ import com.backendstreetboys.gordont.database.AppDatabase;
 import com.backendstreetboys.gordont.database.PesoYAltura;
 import com.backendstreetboys.gordont.database.PesoYAlturaDao;
 import com.backendstreetboys.gordont.databinding.ActivityModificableBinding;
+import com.backendstreetboys.gordont.util.AppToast;
 
 import java.time.Instant;
 
@@ -32,16 +33,16 @@ public class Modificable extends AppCompatActivity {
             String peso = binding.pesoAct.getText().toString();
 
             if (altura.isEmpty() || peso.isEmpty()) {
-                Toast.makeText(this, "El peso y la altura no pueden estar vacios", Toast.LENGTH_SHORT).show();
+                AppToast.showToast(this, "El peso y la altura no pueden estar vacios", Toast.LENGTH_SHORT);
             } else {
                 double doubleAltura = Double.parseDouble(altura);
                 double doublePeso = Double.parseDouble(peso);
 
                 if (doubleAltura > 3) {
-                    Toast.makeText(this, "La altura tiene que ser en metros", Toast.LENGTH_SHORT).show();
+                    AppToast.showToast(this, "La altura tiene que ser en metros", Toast.LENGTH_SHORT);
                 } else {
                     anadirPyaBD(doubleAltura, doublePeso);
-                    Toast.makeText(this, "Peso y altura actualizados", Toast.LENGTH_SHORT).show();
+                    AppToast.showToast(this, "Peso y altura actualizados", Toast.LENGTH_SHORT);
                     openMain();
                 }
             }
