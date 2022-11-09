@@ -1,6 +1,7 @@
 package com.backendstreetboys.gordont;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -50,8 +51,13 @@ public class DietasEjercicios extends AppCompatActivity {
 
 
         binding.ButtonGym.setOnClickListener( v -> {
-                DescargarGYM();
+            DescargarGYM();
 
+        });
+
+
+        binding.ButtonADieta.setOnClickListener( v -> {
+            DescargarDietas();
         });
 
 
@@ -59,42 +65,18 @@ public class DietasEjercicios extends AppCompatActivity {
 
     }
 
+    public void DescargarDietas(){
+
+        String MY_URL = "https://fundaciondelcorazon.com/images/stories/file/dieta_sobrepeso.pdf";
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(MY_URL)));
+    }
 
 
     public void DescargarGYM(){
 
-        try{
-            URL url = new URL("https://seom.org/seomcms/images/stories/recursos");
-            HttpsURLConnection c = (HttpsURLConnection) url.openConnection();
-
-            c.setRequestMethod("GET");
-            c.setDoOutput(true);
-            c.connect();
-
-            String Path = Environment.getExternalStorageDirectory() + "/download/";
-            Log.v("PdfManager", "PATH: " + Path);
-            File file = new File(Path);
-            file.mkdirs();
-            FileOutputStream fos = new FileOutputStream("https://seom.org/seomcms/images/stories/recursos/Guias_Nutricion_Ejercicio_Cancer_Mama.pdf");
-
-            InputStream is = c.getInputStream();
-
-            byte[] buffer = new byte[702];
-            int len1 = 0;
-            while ((len1 = is.read(buffer)) != -1) {
-                fos.write(buffer, 0, len1);
-            }
-            fos.close();
-            is.close();
-
-
-        }catch (IOException e) {
-            Log.d("Error DESCARGAR el PDF", "El motivo del ERROR ES :-> " + e);
-        }
-
-        Log.v("PdfManager", "Check: ");
+        String MY_URL = "https://seom.org/seomcms/images/stories/recursos/Guias_Nutricion_Ejercicio_Cancer_Mama.pdf";
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(MY_URL)));
     }
-
 
     public void openModificable(){
 
