@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".mimir"
+        android:background="@color/light_black">
+
+
+        <ImageView
+            android:id="@+id/imageViewJabaJar"
+            android:layout_width="387dp"
+            android:layout_height="235dp"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            android:src="@drawable/obiheader"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.301" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="353dp"
+            android:layout_height="350dp"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            android:background="@drawable/custom_layout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.74">
+
+            <TextView
+                android:id="@+id/textPonerseForma"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="83dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="92dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:gravity="center"
+                android:text="¡A ponerse en forma!"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+
+            <TextView
+                android:id="@+id/textElegir"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="96dp"
+                android:layout_marginEnd="91dp"
+                android:layout_marginBottom="239dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Elige una opción:"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/ButtonADieta"
+                android:layout_width="123dp"
+                android:layout_height="125dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="194dp"
+                android:layout_marginBottom="46dp"
+                android:background="@drawable/comida2"
+                android:fontFamily="@font/open_sans" />
+
+            <TextView
+                android:id="@+id/textDescargarDieta"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="39dp"
+                android:layout_marginEnd="189dp"
+                android:layout_marginBottom="172dp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:text="Descargar\ndieta"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/ButtonGym"
+                android:layout_width="123dp"
+                android:layout_height="125dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="195dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="46dp"
+                android:background="@drawable/gym2"
+                android:fontFamily="@font/open_sans" />
+
+            <TextView
+                android:id="@+id/textDescargarRutina"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="193dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="171dp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:text="Descargar rutina de ejercicios"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_footer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout3"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ImageButton
+                android:id="@+id/ButtonHome"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="62dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="283dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/home3"
+                android:fontFamily="@font/open_sans" />
+
+            <ImageButton
+                android:id="@+id/ButtonDietasEjercicios"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="274dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="59dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/rutinas2_activo"
+                android:fontFamily="@font/open_sans" />
+
+            <ImageButton
+                android:id="@+id/ButtonModificarPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="173dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="171dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/edit2"
+                android:fontFamily="@font/open_sans" />
+
+        </RelativeLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</layout>
