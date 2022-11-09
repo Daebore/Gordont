@@ -34,7 +34,7 @@
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="95dp"
+            android:layout_height="0dp"
             android:background="@drawable/redsable"
             app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
             app:layout_constraintEnd_toEndOf="parent"
