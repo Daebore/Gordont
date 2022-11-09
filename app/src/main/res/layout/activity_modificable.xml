@@ -100,6 +100,7 @@
                 android:background="@drawable/custom_textview"
                 android:fontFamily="@font/open_sans"
                 android:hint="66 kilos"
+                android:inputType="numberDecimal"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -114,6 +115,7 @@
                 android:background="@drawable/custom_textview"
                 android:fontFamily="@font/open_sans"
                 android:hint="1.70 kilos"
+                android:inputType="numberDecimal"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
