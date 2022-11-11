@@ -120,10 +120,12 @@ public class MainActivity extends AppCompatActivity {
 
         double resultado = doublePeso / alturaCuadrado;
 
+        double resultadoF = Math.round(resultado*100)/100;
+
         System.out.println("El resultado es de " + resultado);
 
 
-        return resultado;
+        return resultadoF;
 
     }
 
