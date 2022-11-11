@@ -1,10 +1,10 @@
 package com.backendstreetboys.gordont;
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.support.v7.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class mimir extends AppCompatActivity {
+public class Mimir extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
