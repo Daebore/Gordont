@@ -10,7 +10,7 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".mimir"
+        tools:context=".Mimir"
         android:background="@color/light_black">
 
 
@@ -41,7 +41,7 @@
             app:layout_constraintVertical_bias="0.74">
 
             <TextView
-                android:id="@+id/textPonerseForma"
+                android:id="@+id/textDormir"
                 android:layout_width="179dp"
                 android:layout_height="wrap_content"
                 HorizontalOptions="CenterAndExpand"
@@ -54,140 +54,135 @@
                 android:layout_marginEnd="92dp"
                 android:fontFamily="@font/open_sans_bold"
                 android:gravity="center"
-                android:text="¡A ponerse en forma!"
+                android:text="Hora de dormir es"
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
+            <ImageView
+                android:layout_width="119dp"
+                android:layout_height="108dp"
+                android:layout_below="@+id/textDormir"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="119dp"
+                android:layout_marginTop="88dp"
+                android:layout_marginEnd="116dp"
+                android:src="@drawable/clock" />
 
             <TextView
-                android:id="@+id/textElegir"
-                android:layout_width="166dp"
+                android:id="@+id/textHorasSueno"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                android:layout_width="179dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="96dp"
-                android:layout_marginEnd="91dp"
-                android:layout_marginBottom="239dp"
-                android:fontFamily="@font/open_sans"
-                android:text="Elige una opción:"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <ImageButton
-                android:id="@+id/ButtonADieta"
-                android:layout_width="123dp"
-                android:layout_height="125dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="36dp"
-                android:layout_marginEnd="194dp"
-                android:layout_marginBottom="46dp"
-                android:background="@drawable/comida2"
-                android:fontFamily="@font/open_sans" />
-
-            <TextView
-                android:id="@+id/textDescargarDieta"
-                android:layout_width="125dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="39dp"
-                android:layout_marginEnd="189dp"
-                android:layout_marginBottom="172dp"
+                android:layout_marginStart="82dp"
+                android:layout_marginTop="208dp"
+                android:layout_marginEnd="93dp"
                 android:fontFamily="@font/open_sans"
                 android:gravity="center"
-                android:text="Descargar\ndieta"
+                android:text="Contabilizar horas de sueño"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="22sp" />
 
-            <ImageButton
-                android:id="@+id/ButtonGym"
-                android:layout_width="123dp"
-                android:layout_height="125dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="195dp"
-                android:layout_marginEnd="35dp"
-                android:layout_marginBottom="46dp"
-                android:background="@drawable/gym2"
-                android:fontFamily="@font/open_sans" />
-
-            <TextView
-                android:id="@+id/textDescargarRutina"
-                android:layout_width="125dp"
+            <Button
+                android:id="@+id/ButtonSuenyo"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/textHorasSueno"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="193dp"
-                android:layout_marginEnd="35dp"
-                android:layout_marginBottom="171dp"
+                android:layout_marginStart="126dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="129dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_button"
                 android:fontFamily="@font/open_sans"
-                android:gravity="center"
-                android:text="Descargar rutina de ejercicios"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:text="Empezar"
+                android:textColor="@color/black" />
 
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="54dp"
             android:background="@drawable/custom_footer"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/relativeLayout3"
             app:layout_constraintVertical_bias="1.0">
 
             <ImageButton
                 android:id="@+id/ButtonHome"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
                 android:layout_width="wrap_content"
                 android:layout_height="54dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="62dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="283dp"
-                android:layout_marginBottom="4dp"
-                android:background="@drawable/home3"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="315dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/home3_activo"
                 android:fontFamily="@font/open_sans" />
 
             <ImageButton
                 android:id="@+id/ButtonDietasEjercicios"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
                 android:layout_width="wrap_content"
                 android:layout_height="54dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="274dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="59dp"
-                android:layout_marginBottom="4dp"
-                android:background="@drawable/rutinas2_activo"
+                android:layout_marginStart="214dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="119dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/rutinas2"
                 android:fontFamily="@font/open_sans" />
 
             <ImageButton
                 android:id="@+id/ButtonModificarPerfil"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
                 android:layout_width="wrap_content"
                 android:layout_height="54dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="173dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginEnd="171dp"
-                android:layout_marginBottom="4dp"
+                android:layout_marginStart="122dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="222dp"
+                android:layout_marginBottom="2dp"
                 android:background="@drawable/edit2"
+                android:fontFamily="@font/open_sans" />
+
+            <ImageButton
+                android:id="@+id/ButtonSueno"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="315dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="29dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/sueno"
                 android:fontFamily="@font/open_sans" />
 
         </RelativeLayout>
