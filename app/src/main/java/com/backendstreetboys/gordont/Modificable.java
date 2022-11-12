@@ -58,7 +58,10 @@ public class Modificable extends AppCompatActivity {
                 //  setContentView(R.layout.activity_main);
             });
 
-
+            binding.ButtonSueno.setOnClickListener(v -> {
+                openSueno();
+                // setContentView(R.layout.activity_modificable);
+            });
         }
 
         public void anadirPyaBD ( double altura, double peso){
@@ -70,6 +73,16 @@ public class Modificable extends AppCompatActivity {
         public void openMain () {
 
             Intent intent = new Intent(this, MainActivity.class);
+
+
+            startActivity(intent);
+
+        }
+
+        public void openSueno(){
+
+            Intent intent = new Intent(this, Mimir.class);
+
 
 
             startActivity(intent);

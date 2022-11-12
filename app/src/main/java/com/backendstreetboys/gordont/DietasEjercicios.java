@@ -56,6 +56,10 @@ public class DietasEjercicios extends AppCompatActivity {
         });
 
 
+        binding.ButtonSueno.setOnClickListener(v -> {
+            openSueno();
+            // setContentView(R.layout.activity_modificable);
+        });
 
 
     }
@@ -83,5 +87,15 @@ public class DietasEjercicios extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+    public void openSueno(){
+
+        Intent intent = new Intent(this, Mimir.class);
+
+
+
+        startActivity(intent);
+
+    }
 
 }

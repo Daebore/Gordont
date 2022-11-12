@@ -158,7 +158,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="315dp"
                 android:layout_marginBottom="2dp"
-                android:background="@drawable/home3_activo"
+                android:background="@drawable/home3"
                 android:fontFamily="@font/open_sans" />
 
             <ImageButton
@@ -175,7 +175,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="119dp"
                 android:layout_marginBottom="2dp"
-                android:background="@drawable/rutinas2"
+                android:background="@drawable/rutinas2_activo"
                 android:fontFamily="@font/open_sans" />
 
             <ImageButton

@@ -65,6 +65,11 @@ public class MainActivity extends AppCompatActivity {
            // setContentView(R.layout.activity_modificable);
         });
 
+        binding.ButtonSueno.setOnClickListener(v -> {
+            openSueno();
+            // setContentView(R.layout.activity_modificable);
+        });
+
 
 
     }
@@ -102,6 +107,16 @@ public class MainActivity extends AppCompatActivity {
     public void openDietasEjercicios(){
 
         Intent intent = new Intent(this, DietasEjercicios.class);
+
+
+
+        startActivity(intent);
+
+    }
+
+    public void openSueno(){
+
+        Intent intent = new Intent(this, Mimir.class);
 
 
 
