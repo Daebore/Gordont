@@ -51,13 +51,8 @@ public class DietasEjercicios extends AppCompatActivity {
 
 
         binding.ButtonGym.setOnClickListener( v -> {
-                DescargarGYM();
+            DescargarGYM();
 
-        });
-
-
-        binding.ButtonADieta.setOnClickListener( v -> {
-            DescargarDietas();
         });
 
 
@@ -65,11 +60,6 @@ public class DietasEjercicios extends AppCompatActivity {
 
     }
 
-    public void DescargarDietas(){
-
-        String MY_URL = "https://fundaciondelcorazon.com/images/stories/file/dieta_sobrepeso.pdf";
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(MY_URL)));
-    }
 
 
     public void DescargarGYM(){
