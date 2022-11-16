@@ -15,8 +15,8 @@
 
 
         <ImageView
-            android:id="@+id/imageViewJabaJar"
-            android:layout_width="387dp"
+            android:id="@+id/imageViewYoda"
+            android:layout_width="355dp"
             android:layout_height="235dp"
             HorizontalOptions="CenterAndExpand"
             VerticalOptions="CenterAndExpand"

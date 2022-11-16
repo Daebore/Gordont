@@ -50,6 +50,13 @@ public class DietasEjercicios extends AppCompatActivity {
 
         });
 
+        binding.ButtonADieta.setOnClickListener( v -> {
+            MediaPlayer mp = MediaPlayer.create(this, R.raw.darthvader);
+            mp.start();
+            DescargarDieta();
+
+        });
+
 
         binding.ButtonGym.setOnClickListener( v -> {
             MediaPlayer mp = MediaPlayer.create(this, R.raw.darthvader);
@@ -60,8 +67,6 @@ public class DietasEjercicios extends AppCompatActivity {
 
 
         binding.ButtonSueno.setOnClickListener(v -> {
-            MediaPlayer mp = MediaPlayer.create(this, R.raw.darthvader);
-            mp.start();
             openSueno();
             // setContentView(R.layout.activity_modificable);
         });
@@ -69,11 +74,16 @@ public class DietasEjercicios extends AppCompatActivity {
 
     }
 
+    public void DescargarDieta(){
+
+        String MY_URL = "https://fundaciondelcorazon.com/images/stories/file/dieta_sobrepeso.pdf";
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(MY_URL)));
+    }
 
 
     public void DescargarGYM(){
 
-        String MY_URL = "https://seom.org/seomcms/images/stories/recursos/Guias_Nutricion_Ejercicio_Cancer_Mama.pdf";
+        String MY_URL = "https://www.rockandwallclimbing.com/wp-content/uploads/2020/03/RUTINAS-DE-ENTRENAMIENTOS-EN-CASA.pdf";
         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(MY_URL)));
     }
 
@@ -96,8 +106,6 @@ public class DietasEjercicios extends AppCompatActivity {
     public void openSueno(){
 
         Intent intent = new Intent(this, Mimir.class);
-
-
 
         startActivity(intent);
 
