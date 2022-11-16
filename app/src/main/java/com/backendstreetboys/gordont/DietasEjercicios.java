@@ -1,6 +1,7 @@
 package com.backendstreetboys.gordont;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
@@ -51,6 +52,8 @@ public class DietasEjercicios extends AppCompatActivity {
 
 
         binding.ButtonGym.setOnClickListener( v -> {
+            MediaPlayer mp = MediaPlayer.create(this, R.raw.darthvader);
+            mp.start();
             DescargarGYM();
 
         });
@@ -61,6 +64,8 @@ public class DietasEjercicios extends AppCompatActivity {
 
 
         binding.ButtonSueno.setOnClickListener(v -> {
+            MediaPlayer mp = MediaPlayer.create(this, R.raw.darthvader);
+            mp.start();
             openSueno();
             // setContentView(R.layout.activity_modificable);
         });

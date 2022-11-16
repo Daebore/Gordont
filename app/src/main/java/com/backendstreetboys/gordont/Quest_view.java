@@ -1,6 +1,7 @@
 package com.backendstreetboys.gordont;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -95,6 +96,8 @@ public class Quest_view extends AppCompatActivity {
                         guardarEnBD(nombre, doubleAltura, doublePeso, intEdad, stringSexo);
                         startActivity(new Intent(this, MainActivity.class));
 
+                        MediaPlayer mp = MediaPlayer.create(this, R.raw.hellothere);
+                        mp.start();
                         setContentView(R.layout.activity_main);
                     }
                 }

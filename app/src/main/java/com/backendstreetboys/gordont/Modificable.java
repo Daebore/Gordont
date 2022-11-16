@@ -1,6 +1,7 @@
 package com.backendstreetboys.gordont;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -43,6 +44,8 @@ public class Modificable extends AppCompatActivity {
                 } else {
                     anadirPyaBD(doubleAltura, doublePeso);
                     AppToast.showToast(this, "Peso y altura actualizados", Toast.LENGTH_SHORT);
+                    MediaPlayer mp = MediaPlayer.create(this, R.raw.r2d2);
+                    mp.start();
                     openMain();
                 }
             }
