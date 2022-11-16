@@ -55,6 +55,10 @@ public class DietasEjercicios extends AppCompatActivity {
 
         });
 
+        binding.ButtonADieta.setOnClickListener( v -> {
+            DescargarDietas();
+        });
+
 
         binding.ButtonSueno.setOnClickListener(v -> {
             openSueno();
@@ -62,6 +66,12 @@ public class DietasEjercicios extends AppCompatActivity {
         });
 
 
+    }
+
+    public void DescargarDietas(){
+
+        String MY_URL = "https://fundaciondelcorazon.com/images/stories/file/dieta_sobrepeso.pdf";
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(MY_URL)));
     }
 
 
