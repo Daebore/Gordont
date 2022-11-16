@@ -158,7 +158,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/relativeLayout5"
             app:layout_constraintVertical_bias="1.0">
 
             <ImageButton
@@ -166,15 +165,15 @@
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand"
                 android:layout_width="wrap_content"
-                android:layout_height="54dp"
+                android:layout_height="45dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="315dp"
-                android:layout_marginBottom="2dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="331dp"
+                android:layout_marginBottom="3dp"
                 android:background="@drawable/home3_activo"
                 android:fontFamily="@font/open_sans" />
 
@@ -188,10 +187,10 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="214dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="119dp"
-                android:layout_marginBottom="2dp"
+                android:layout_marginStart="165dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="168dp"
+                android:layout_marginBottom="3dp"
                 android:background="@drawable/rutinas2"
                 android:fontFamily="@font/open_sans" />
 
@@ -200,15 +199,15 @@
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand"
                 android:layout_width="wrap_content"
-                android:layout_height="54dp"
+                android:layout_height="45dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="122dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="222dp"
-                android:layout_marginBottom="2dp"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="256dp"
+                android:layout_marginBottom="3dp"
                 android:background="@drawable/edit2"
                 android:fontFamily="@font/open_sans" />
 
@@ -222,11 +221,28 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="315dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="29dp"
-                android:layout_marginBottom="2dp"
+                android:layout_marginStart="255dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="89dp"
+                android:layout_marginBottom="3dp"
                 android:background="@drawable/sueno"
+                android:fontFamily="@font/open_sans" />
+
+            <ImageButton
+                android:id="@+id/ButtonBascula"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                android:layout_width="78dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="327dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/perderpeso"
                 android:fontFamily="@font/open_sans" />
 
         </RelativeLayout>
