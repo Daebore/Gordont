@@ -107,6 +107,8 @@ public class DietasEjercicios extends AppCompatActivity {
 
         Intent intent = new Intent(this, Mimir.class);
 
+
+
         startActivity(intent);
 
     }
