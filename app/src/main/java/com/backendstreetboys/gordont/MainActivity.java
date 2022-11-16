@@ -150,20 +150,23 @@ public class MainActivity extends AppCompatActivity {
         String mensaje = null;
 
         if (resultado < 18.5) {
-            mensaje = "Tu estas gordon't ";
+            mensaje = "Estás debajo de tu peso ideal";
             binding.MENSAJEtext.setTextColor(getResources().getColor(R.color.teal_200));
-        } else if (resultado > 18.5 && resultado < 24.9) {
-            mensaje = "Tu estas chad ";
+        } else if (resultado >= 18.5 && resultado < 24.9) {
+            mensaje = "Estás en tu peso ideal";
             binding.MENSAJEtext.setTextColor(getResources().getColor(R.color.verde));
-        } else if (resultado > 25.0 && resultado < 29.9) {
-            mensaje = "Tu estas gordo ";
+        } else if (resultado >= 25.0 && resultado < 29.9) {
+            mensaje = "Tienes sobreso";
             binding.MENSAJEtext.setTextColor(getResources().getColor(R.color.amarillo));
-        } else if (resultado > 30.0 && resultado < 39.9) {
-            mensaje = "Tu estas MUY GORDO ";
+        } else if (resultado >= 30.0 && resultado < 34.9) {
+            mensaje = "Tienes obesidad grado I";
             binding.MENSAJEtext.setTextColor(getResources().getColor(R.color.orange));
-        } else if (resultado > 40.0) {
-            mensaje = "no se como coño estas vivo ";
+        } else if(resultado >= 35 && resultado < 39.9){
+            mensaje = "Tienes obesidad de grado II";
             binding.MENSAJEtext.setTextColor(getResources().getColor(R.color.rojo));
+        } else if (resultado >= 40.0) {
+            mensaje = "Tienes obesidad grado III";
+            binding.MENSAJEtext.setTextColor(getResources().getColor(R.color.purple_500));
         }
 
         return mensaje;
