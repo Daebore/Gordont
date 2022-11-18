@@ -1,9 +1,11 @@
 package com.backendstreetboys.gordont;
 
 import android.content.Intent;
+import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Chronometer;
 
 import com.backendstreetboys.gordont.databinding.ActivityMainBinding;
 import com.backendstreetboys.gordont.databinding.ActivityMimirBinding;
@@ -41,7 +43,30 @@ public class Mimir extends AppCompatActivity {
         });
 
 
+        binding.ButtonStartSuenyo.setOnClickListener( v-> {
+            startCronometro();
+        });
 
+
+        binding.ButtonStopSuenyo.setOnClickListener( v-> {
+            stopCronometro();
+        });
+
+
+    }
+
+
+    public void startCronometro(){
+        Chronometer simpleChronometer = (Chronometer) findViewById(R.id.simpleChronometer); // initiate a chronometer
+
+        simpleChronometer.start(); // start a chronometer
+    }
+
+    public void stopCronometro(){
+        Chronometer simpleChronometer = (Chronometer) findViewById(R.id.simpleChronometer); // initiate a chronometer
+
+        simpleChronometer.stop();
+        simpleChronometer.setBase(SystemClock.elapsedRealtime()); // start a chronometer
     }
 
 

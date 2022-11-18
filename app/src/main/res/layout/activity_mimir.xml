@@ -94,7 +94,7 @@
                 android:textSize="22sp" />
 
             <Button
-                android:id="@+id/ButtonSuenyo"
+                android:id="@+id/ButtonStopSuenyo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/simpleChronometer"
@@ -111,7 +111,7 @@
                 android:textColor="@color/black" />
 
             <Button
-                android:id="@+id/ButtonPararSuenyo"
+                android:id="@+id/ButtonStartSuenyo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/simpleChronometer"
