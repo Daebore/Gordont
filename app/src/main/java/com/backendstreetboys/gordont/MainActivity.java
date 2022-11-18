@@ -70,6 +70,10 @@ public class MainActivity extends AppCompatActivity {
             // setContentView(R.layout.activity_modificable);
         });
 
+        binding.ButtonBascula.setOnClickListener( v ->{
+            openComparar();
+        });
+
 
 
     }
@@ -123,6 +127,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+
+    public void openComparar(){
+
+        Intent intent = new Intent(this, ComparaPeso.class);
+
+        startActivity(intent);
+    }
+
 
     public double operacionIMC(double doubleAltura, double doublePeso) {
 

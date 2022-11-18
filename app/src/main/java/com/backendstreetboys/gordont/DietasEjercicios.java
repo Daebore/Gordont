@@ -65,6 +65,10 @@ public class DietasEjercicios extends AppCompatActivity {
 
         });
 
+        binding.ButtonBascula.setOnClickListener( v ->{
+            openComparar();
+        });
+
 
         binding.ButtonSueno.setOnClickListener(v -> {
             openSueno();
@@ -78,6 +82,13 @@ public class DietasEjercicios extends AppCompatActivity {
 
         String MY_URL = "https://fundaciondelcorazon.com/images/stories/file/dieta_sobrepeso.pdf";
         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(MY_URL)));
+    }
+
+    public void openComparar(){
+
+        Intent intent = new Intent(this, ComparaPeso.class);
+
+        startActivity(intent);
     }
 
 

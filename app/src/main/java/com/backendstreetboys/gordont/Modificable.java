@@ -65,6 +65,10 @@ public class Modificable extends AppCompatActivity {
                 openSueno();
                 // setContentView(R.layout.activity_modificable);
             });
+
+        binding.ButtonBascula.setOnClickListener( v ->{
+            openComparar();
+        });
         }
 
         public void anadirPyaBD ( double altura, double peso){
@@ -91,6 +95,13 @@ public class Modificable extends AppCompatActivity {
             startActivity(intent);
 
         }
+
+    public void openComparar(){
+
+        Intent intent = new Intent(this, ComparaPeso.class);
+
+        startActivity(intent);
+    }
 
         public void openDietasEjercicios () {
 
