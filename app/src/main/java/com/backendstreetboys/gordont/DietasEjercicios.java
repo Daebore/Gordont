@@ -71,6 +71,8 @@ public class DietasEjercicios extends AppCompatActivity {
 
 
         binding.ButtonSueno.setOnClickListener(v -> {
+            MediaPlayer mp = MediaPlayer.create(this, R.raw.darthvader);
+            mp.start();
             openSueno();
             // setContentView(R.layout.activity_modificable);
         });
