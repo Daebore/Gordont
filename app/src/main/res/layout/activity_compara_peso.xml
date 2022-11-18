@@ -13,7 +13,6 @@
         tools:context=".DietasEjercicios"
         android:background="@color/light_black">
 
-
         <ImageView
             android:id="@+id/imageViewComPeso"
             android:layout_width="387dp"
