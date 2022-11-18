@@ -26,6 +26,10 @@ public class Mimir extends AppCompatActivity {
             // setContentView(R.layout.activity_dietas_ejercicios);
         });
 
+        binding.ButtonBascula.setOnClickListener( v ->{
+            openComparar();
+        });
+
         binding.ButtonHome.setOnClickListener(v -> {
             openMain();
             //  setContentView(R.layout.activity_main);
@@ -59,6 +63,13 @@ public class Mimir extends AppCompatActivity {
 
         startActivity(intent);
 
+    }
+
+    public void openComparar(){
+
+        Intent intent = new Intent(this, ComparaPeso.class);
+
+        startActivity(intent);
     }
 
     public void openDietasEjercicios () {

@@ -65,8 +65,14 @@ public class DietasEjercicios extends AppCompatActivity {
 
         });
 
+        binding.ButtonBascula.setOnClickListener( v ->{
+            openComparar();
+        });
+
 
         binding.ButtonSueno.setOnClickListener(v -> {
+            MediaPlayer mp = MediaPlayer.create(this, R.raw.darthvader);
+            mp.start();
             openSueno();
             // setContentView(R.layout.activity_modificable);
         });
@@ -78,6 +84,13 @@ public class DietasEjercicios extends AppCompatActivity {
 
         String MY_URL = "https://fundaciondelcorazon.com/images/stories/file/dieta_sobrepeso.pdf";
         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(MY_URL)));
+    }
+
+    public void openComparar(){
+
+        Intent intent = new Intent(this, ComparaPeso.class);
+
+        startActivity(intent);
     }
 
 
@@ -106,6 +119,8 @@ public class DietasEjercicios extends AppCompatActivity {
     public void openSueno(){
 
         Intent intent = new Intent(this, Mimir.class);
+
+
 
         startActivity(intent);
 
