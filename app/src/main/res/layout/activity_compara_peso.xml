@@ -41,7 +41,7 @@
             app:layout_constraintVertical_bias="0.74">
 
             <TextView
-                android:id="@+id/textPonerseForma"
+                android:id="@+id/textRegistroPeso"
                 android:layout_width="179dp"
                 android:layout_height="wrap_content"
                 HorizontalOptions="CenterAndExpand"
@@ -56,23 +56,117 @@
                 android:gravity="center"
                 android:text="Registro del peso"
                 android:textColor="@color/black"
-                android:textSize="30sp" />
+                android:textSize="22sp" />
 
+            <EditText
+                android:id="@+id/editHSuenio"
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textRegistroSuenio"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/custom_textview"
+                android:hint="Respuesta 1"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/textElegir"
-                android:layout_width="166dp"
+                android:id="@+id/textRegistroSuenio"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                android:layout_width="179dp"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="174dp"
+                android:layout_marginEnd="87dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:gravity="center"
+                android:text="Registro horas de sueño"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/editRPeso"
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textRegistroPeso"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/custom_textview"
+                android:hint="Respuesta 1"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/ButtonFlechaI1"
+                android:layout_width="81dp"
+                android:layout_height="42dp"
+                android:layout_below="@+id/editRPeso"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="96dp"
-                android:layout_marginEnd="91dp"
-                android:layout_marginBottom="239dp"
-                android:fontFamily="@font/open_sans"
-                android:text="Elige una opción:"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="228dp"
+                android:layout_marginBottom="186dp"
+                android:background="@drawable/fechai"
+                android:fontFamily="@font/open_sans" />
+
+            <ImageButton
+                android:id="@+id/ButtonFlechaD1"
+                android:layout_width="81dp"
+                android:layout_height="42dp"
+                android:layout_below="@+id/editRPeso"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="228dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginBottom="185dp"
+                android:background="@drawable/fechad"
+                android:fontFamily="@font/open_sans" />
+
+            <ImageButton
+                android:id="@+id/ButtonFlechaI2"
+                android:layout_width="81dp"
+                android:layout_height="42dp"
+                android:layout_below="@+id/editHSuenio"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="233dp"
+                android:layout_marginBottom="11dp"
+                android:background="@drawable/fechai"
+                android:fontFamily="@font/open_sans" />
+
+            <ImageButton
+                android:id="@+id/ButtonFlechaD22"
+                android:layout_width="81dp"
+                android:layout_height="42dp"
+                android:layout_below="@+id/editRPeso"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="228dp"
+                android:layout_marginTop="186dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginBottom="11dp"
+                android:background="@drawable/fechad"
+                android:fontFamily="@font/open_sans" />
 
         </RelativeLayout>
 
