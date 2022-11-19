@@ -2,26 +2,21 @@ package com.backendstreetboys.gordont.database;
 
 import androidx.annotation.NonNull;
 import androidx.room.*;
-
-import java.sql.Date;
-import java.time.Instant;
 import java.time.LocalDateTime;
-import java.time.ZoneId;
+import java.time.ZoneOffset;
 
 @Entity
 public class PesoYAltura {
     @PrimaryKey
     @NonNull
-    public long fecha;
+    public long fecha; // Fecha y hora en segundos.
 
-    @ColumnInfo(name = "altura")
     public double altura;
 
-    @ColumnInfo(name = "peso")
     public double peso;
 
-    public LocalDateTime getFechaLDT(){
-        return LocalDateTime.ofInstant(Instant.ofEpochSecond(fecha), ZoneId.of("ECT"));
+    public LocalDateTime getFechaLDT(ZoneOffset zoffset){
+        return LocalDateTime.ofEpochSecond(fecha, 0, zoffset);
     }
 
     public PesoYAltura() {
