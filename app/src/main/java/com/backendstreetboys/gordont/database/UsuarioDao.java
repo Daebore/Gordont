@@ -1,7 +1,5 @@
 package com.backendstreetboys.gordont.database;
 
-import android.arch.lifecycle.LiveData;
-
 import androidx.room.*;
 
 import java.util.List;

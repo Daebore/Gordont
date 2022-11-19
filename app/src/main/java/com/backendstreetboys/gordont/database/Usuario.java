@@ -9,10 +9,8 @@ public class Usuario {
     @NonNull
     public String nombre;
 
-    @ColumnInfo(name = "edad")
     public int edad;
 
-    @ColumnInfo(name = "sexo")
     public String sexo;
 
     public Usuario() {
