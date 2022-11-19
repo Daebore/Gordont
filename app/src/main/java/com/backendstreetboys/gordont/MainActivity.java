@@ -41,46 +41,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void recogerDatosBD() {
-        // Obtener objetos BD
+        // Obtener objetos BD.
         bd = AppDatabase.getDatabase(getApplicationContext());
         userDao = bd.userDao();
         pyaDao = bd.pyaDao();
 
+        // Sacar datos del usuario y calcular IMC.
         Usuario user = userDao.getAll().get(0);
         PesoYAltura pya = pyaDao.getLatest();
-
-        List<PesoYAltura> historialPya = pyaDao.getAll();
         double imc = operacionIMC(pya.altura, pya.peso);
-        String mensaje = resultadoMensaje(imc);
-        String nombre = user.nombre;
-        String texto_imc = String.valueOf(imc);
 
-        binding.IMCtext.setText(texto_imc);
-        binding.MENSAJEtext.setText(mensaje);
-        binding.textUser.setText(nombre);
+        // Mostrar los datos en sus respectivos campos.
+        binding.IMCtext.setText(String.valueOf(imc));
+        binding.MENSAJEtext.setText(resultadoMensaje(imc));
+        binding.textUser.setText(user.nombre);
     }
-
-    public void openModificable() {
-        Intent intent = new Intent(this, Modificable.class);
-        startActivity(intent);
-    }
-
-    public void openDietasEjercicios() {
-        Intent intent = new Intent(this, DietasEjercicios.class);
-        startActivity(intent);
-    }
-
-    public void openSueno() {
-        Intent intent = new Intent(this, Mimir.class);
-        startActivity(intent);
-    }
-
-
-    public void openComparar() {
-        Intent intent = new Intent(this, ComparaPeso.class);
-        startActivity(intent);
-    }
-
 
     public double operacionIMC(double doubleAltura, double doublePeso) {
         double alturaCuadrado = doubleAltura * doubleAltura;
@@ -93,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("El resultado es de " + resultado);
         return resultadoF;
     }
-
 
     public String resultadoMensaje(double resultado) {
         String mensaje = null;
@@ -117,6 +91,26 @@ public class MainActivity extends AppCompatActivity {
             binding.MENSAJEtext.setTextColor(getResources().getColor(R.color.purple_500));
         }
         return mensaje;
+    }
+
+    public void openModificable() {
+        Intent intent = new Intent(this, Modificable.class);
+        startActivity(intent);
+    }
+
+    public void openDietasEjercicios() {
+        Intent intent = new Intent(this, DietasEjercicios.class);
+        startActivity(intent);
+    }
+
+    public void openSueno() {
+        Intent intent = new Intent(this, Mimir.class);
+        startActivity(intent);
+    }
+
+    public void openComparar() {
+        Intent intent = new Intent(this, ComparaPeso.class);
+        startActivity(intent);
     }
 
 }
