@@ -18,68 +18,40 @@ public class ComparaPeso extends AppCompatActivity {
         binding = ActivityComparaPesoBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
+        // Botones de la barra de menú.
         binding.ButtonDietasEjercicios.setOnClickListener(v -> {
             Log.d("MainActivity", "LLENGO A DIETAS EJERCICIOS");
             openDietasEjercicios();
-            //  setContentView(R.layout.activity_dietas_ejercicios);
         });
-
         binding.ButtonModificarPerfil.setOnClickListener(v -> {
             openModificable();
-            // setContentView(R.layout.activity_modificable);
         });
-
         binding.ButtonSueno.setOnClickListener(v -> {
             openSueno();
-            // setContentView(R.layout.activity_modificable);
         });
-
-        binding.ButtonHome.setOnClickListener(v ->{
+        binding.ButtonHome.setOnClickListener(v -> {
             openHome();
         });
     }
 
-
-
-    public void openModificable(){
-
+    public void openModificable() {
         Intent intent = new Intent(this, Modificable.class);
-
-
-
         startActivity(intent);
-
     }
 
-    public void openDietasEjercicios(){
-
+    public void openDietasEjercicios() {
         Intent intent = new Intent(this, DietasEjercicios.class);
-
-
-
         startActivity(intent);
-
     }
 
-    public void openSueno(){
-
+    public void openSueno() {
         Intent intent = new Intent(this, Mimir.class);
-
-
-
         startActivity(intent);
-
     }
 
-    public void openHome(){
-
+    public void openHome() {
         Intent intent = new Intent(this, MainActivity.class);
-
         startActivity(intent);
-
     }
-
-
 
 }

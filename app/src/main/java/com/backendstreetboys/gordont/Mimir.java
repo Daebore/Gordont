@@ -17,93 +17,61 @@ public class Mimir extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         binding = ActivityMimirBinding.inflate(getLayoutInflater());
-
         setContentView(binding.getRoot());
 
-
-        binding.ButtonDietasEjercicios.setOnClickListener(v -> {
-            openDietasEjercicios();
-            // setContentView(R.layout.activity_dietas_ejercicios);
-        });
-
-        binding.ButtonBascula.setOnClickListener( v ->{
-            openComparar();
-        });
-
-        binding.ButtonHome.setOnClickListener(v -> {
-            openMain();
-            //  setContentView(R.layout.activity_main);
-        });
-
-        binding.ButtonModificarPerfil.setOnClickListener(v -> {
-            openModificable();
-            // setContentView(R.layout.activity_modificable);
-        });
-
-
-        binding.ButtonStartSuenyo.setOnClickListener( v-> {
+        // Botones del cronómetro.
+        binding.ButtonStartSuenyo.setOnClickListener(v -> {
             startCronometro();
         });
-
-
-        binding.ButtonStopSuenyo.setOnClickListener( v-> {
+        binding.ButtonStopSuenyo.setOnClickListener(v -> {
             stopCronometro();
         });
 
-
+        // Botones de la barra de menú.
+        binding.ButtonDietasEjercicios.setOnClickListener(v -> {
+            openDietasEjercicios();
+        });
+        binding.ButtonBascula.setOnClickListener(v -> {
+            openComparar();
+        });
+        binding.ButtonHome.setOnClickListener(v -> {
+            openMain();
+        });
+        binding.ButtonModificarPerfil.setOnClickListener(v -> {
+            openModificable();
+        });
     }
 
-
-    public void startCronometro(){
-        Chronometer simpleChronometer = (Chronometer) findViewById(R.id.simpleChronometer); // initiate a chronometer
-
-        simpleChronometer.start(); // start a chronometer
+    public void startCronometro() {
+        Chronometer simpleChronometer = (Chronometer) findViewById(R.id.simpleChronometer);
+        simpleChronometer.start();
     }
 
-    public void stopCronometro(){
-        Chronometer simpleChronometer = (Chronometer) findViewById(R.id.simpleChronometer); // initiate a chronometer
-
+    public void stopCronometro() {
+        Chronometer simpleChronometer = (Chronometer) findViewById(R.id.simpleChronometer);
         simpleChronometer.stop();
-        simpleChronometer.setBase(SystemClock.elapsedRealtime()); // start a chronometer
+        simpleChronometer.setBase(SystemClock.elapsedRealtime());
     }
 
-
-
-    public void openMain () {
-
+    public void openMain() {
         Intent intent = new Intent(this, MainActivity.class);
-
-
         startActivity(intent);
-
     }
 
-    public void openModificable(){
-
+    public void openModificable() {
         Intent intent = new Intent(this, Modificable.class);
-
-
-
         startActivity(intent);
-
     }
 
-    public void openComparar(){
-
+    public void openComparar() {
         Intent intent = new Intent(this, ComparaPeso.class);
-
         startActivity(intent);
     }
 
-    public void openDietasEjercicios () {
-
+    public void openDietasEjercicios() {
         Intent intent = new Intent(this, DietasEjercicios.class);
-
-
         startActivity(intent);
-
     }
 
 }

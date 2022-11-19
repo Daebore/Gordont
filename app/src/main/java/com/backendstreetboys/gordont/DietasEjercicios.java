@@ -25,105 +25,73 @@ import javax.net.ssl.HttpsURLConnection;
 public class DietasEjercicios extends AppCompatActivity {
 
     private ActivityDietasEjerciciosBinding binding;
-
     ImageButton button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d("DietasEjercicios", "HOLA EJERCICIOS uwu");
         binding = ActivityDietasEjerciciosBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        Log.d("DietasEjercicios", "EL BINDING YA ESTA HECHO");
-
-
-        binding.ButtonModificarPerfil.setOnClickListener(v -> {
-            openModificable();
-
-        });
-
-        binding.ButtonHome.setOnClickListener( v ->{
-            Log.d("DietasEjercicios", "pulsando el boton de home");
-            openMain();
-
-
-        });
-
-        binding.ButtonADieta.setOnClickListener( v -> {
+        // Botones de descarga de PDFs.
+        binding.ButtonADieta.setOnClickListener(v -> {
             MediaPlayer mp = MediaPlayer.create(this, R.raw.darthvader);
             mp.start();
             DescargarDieta();
-
         });
-
-
-        binding.ButtonGym.setOnClickListener( v -> {
+        binding.ButtonGym.setOnClickListener(v -> {
             MediaPlayer mp = MediaPlayer.create(this, R.raw.darthvader);
             mp.start();
             DescargarGYM();
-
         });
 
-        binding.ButtonBascula.setOnClickListener( v ->{
+        // Botones de la barra de menú.
+        binding.ButtonModificarPerfil.setOnClickListener(v -> {
+            openModificable();
+        });
+        binding.ButtonHome.setOnClickListener(v -> {
+            openMain();
+        });
+        binding.ButtonBascula.setOnClickListener(v -> {
             openComparar();
         });
-
-
         binding.ButtonSueno.setOnClickListener(v -> {
             MediaPlayer mp = MediaPlayer.create(this, R.raw.darthvader);
             mp.start();
             openSueno();
-            // setContentView(R.layout.activity_modificable);
         });
-
-
     }
 
-    public void DescargarDieta(){
-
+    public void DescargarDieta() {
         String MY_URL = "https://fundaciondelcorazon.com/images/stories/file/dieta_sobrepeso.pdf";
         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(MY_URL)));
     }
 
-    public void openComparar(){
-
+    public void openComparar() {
         Intent intent = new Intent(this, ComparaPeso.class);
-
         startActivity(intent);
     }
 
 
-    public void DescargarGYM(){
-
+    public void DescargarGYM() {
         String MY_URL = "https://www.rockandwallclimbing.com/wp-content/uploads/2020/03/RUTINAS-DE-ENTRENAMIENTOS-EN-CASA.pdf";
         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(MY_URL)));
     }
 
 
-    public void openModificable(){
-
+    public void openModificable() {
         Intent intent = new Intent(this, Modificable.class);
-
         startActivity(intent);
     }
 
-    public void openMain(){
-
+    public void openMain() {
         Intent intent = new Intent(this, MainActivity.class);
-
         startActivity(intent);
     }
 
-
-    public void openSueno(){
-
+    public void openSueno() {
         Intent intent = new Intent(this, Mimir.class);
-
-
-
         startActivity(intent);
-
     }
 
 }
