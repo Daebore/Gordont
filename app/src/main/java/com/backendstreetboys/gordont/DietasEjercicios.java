@@ -56,8 +56,6 @@ public class DietasEjercicios extends AppCompatActivity {
             openComparar();
         });
         binding.ButtonSueno.setOnClickListener(v -> {
-            MediaPlayer mp = MediaPlayer.create(this, R.raw.darthvader);
-            mp.start();
             openSueno();
         });
     }
