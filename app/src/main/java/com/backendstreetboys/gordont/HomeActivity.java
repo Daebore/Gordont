@@ -1,13 +1,20 @@
 package com.backendstreetboys.gordont;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import androidx.annotation.Nullable;
 
 import com.backendstreetboys.gordont.database.*;
 import com.backendstreetboys.gordont.databinding.ActivityHomeBinding;
 
 public class HomeActivity extends AppCompatActivity {
+
+    private Bitmap takenPhotoBitmap;
 
     private ActivityHomeBinding binding;
     public AppDatabase bd;
@@ -34,7 +41,35 @@ public class HomeActivity extends AppCompatActivity {
         binding.ButtonBascula.setOnClickListener(v -> {
             openComparar();
         });
+
+        binding.camera.setOnClickListener(v -> {
+            openCamera();
+        });
+
     }
+
+    private void openCamera(){
+        Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(cameraIntent,1000);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data){
+        super.onActivityResult(requestCode,resultCode,data);
+
+        if(requestCode == Activity.RESULT_OK && requestCode == 1000){
+
+            if (data != null){
+                takenPhotoBitmap = data.getExtras().getParcelable("data");
+                binding.camera.setImageBitmap(takenPhotoBitmap);
+
+            }
+
+        }
+
+
+    }
+
 
     public void recogerDatosBD() {
         // Obtener objetos BD.

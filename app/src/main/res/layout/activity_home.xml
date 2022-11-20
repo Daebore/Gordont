@@ -43,6 +43,7 @@
                 android:background="@drawable/custom_layout2">
 
                 <ImageView
+                    android:id="@+id/camera"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_above="@+id/textView"
@@ -54,7 +55,8 @@
                     android:layout_marginEnd="116dp"
                     android:layout_marginBottom="-2dp"
                     android:background="@drawable/custom_photo"
-                    android:src="@drawable/profilee" />
+                    android:src="@android:drawable/ic_menu_camera" />
+
 
                 <TextView
                     android:id="@+id/textView"
@@ -88,7 +90,11 @@
                     android:textColor="@color/black"
                     android:textSize="22sp" />
 
+
+
             </RelativeLayout>
+
+
 
             <TextView
                 android:id="@+id/textView2"
