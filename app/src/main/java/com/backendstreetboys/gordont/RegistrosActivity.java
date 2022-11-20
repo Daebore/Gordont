@@ -84,10 +84,16 @@ public class RegistrosActivity extends AppCompatActivity {
         historialHs = (ArrayList<HorasSueno>) hsDao.getAll();
 
         // Mostrar los datos en sus respectivos campos.
-        posPya = historialPya.size() - 1;
-        posHs = historialHs.size() - 1;
-        binding.editRPeso.setText(formatPeso(historialPya.get(posPya)));
-        binding.editHSuenio.setText(formatSueno(historialHs.get(posHs)));
+        if(historialPya.size()>0){
+            posPya = historialPya.size() - 1;
+            binding.editRPeso.setText(formatPeso(historialPya.get(posPya)));
+        }
+        if(historialHs.size()>0){
+            posHs = historialHs.size() - 1;
+            binding.editHSuenio.setText(formatSueno(historialHs.get(posHs)));
+        }else{
+            binding.editHSuenio.setText("No hay registros del sueño aún.");
+        }
     }
 
     public String formatPeso(PesoYAltura pya) {
