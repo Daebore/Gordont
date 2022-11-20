@@ -47,6 +47,7 @@ public class MimirActivity extends AppCompatActivity {
     public void startCronometro() {
         if(!isChronometerRunning){
             Chronometer simpleChronometer = (Chronometer) findViewById(R.id.simpleChronometer);
+            simpleChronometer.setBase(SystemClock.elapsedRealtime());
             simpleChronometer.start();
             isChronometerRunning = true;
         }

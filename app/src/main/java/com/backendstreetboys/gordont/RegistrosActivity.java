@@ -61,7 +61,6 @@ public class RegistrosActivity extends AppCompatActivity {
 
         // Botones de la barra de menú.
         binding.ButtonDietasEjercicios.setOnClickListener(v -> {
-            Log.d("MainActivity", "LLENGO A DIETAS EJERCICIOS");
             openDietasEjercicios();
         });
         binding.ButtonModificarPerfil.setOnClickListener(v -> {
