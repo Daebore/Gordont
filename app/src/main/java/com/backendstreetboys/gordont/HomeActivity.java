@@ -42,13 +42,13 @@ public class HomeActivity extends AppCompatActivity {
             openComparar();
         });
 
-        binding.camera.setOnClickListener(v -> {
+      /*  binding.camera.setOnClickListener(v -> {
             openCamera();
         });
-
+*/
     }
 
-    private void openCamera(){
+ /*   private void openCamera(){
         Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(cameraIntent,1000);
     }
@@ -68,7 +68,7 @@ public class HomeActivity extends AppCompatActivity {
         }
 
 
-    }
+    }*/
 
 
     public void recogerDatosBD() {
