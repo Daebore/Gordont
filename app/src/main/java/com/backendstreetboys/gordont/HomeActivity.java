@@ -109,16 +109,16 @@ public class HomeActivity extends AppCompatActivity {
             mensaje = "Estás en tu peso ideal";
             binding.MENSAJEtext.setTextColor(getResources().getColor(R.color.verde));
         } else if (resultado >= 25.0 && resultado < 29.9) {
-            mensaje = "Tienes sobreso";
+            mensaje = "Tienes sobrepeso";
             binding.MENSAJEtext.setTextColor(getResources().getColor(R.color.amarillo));
         } else if (resultado >= 30.0 && resultado < 34.9) {
-            mensaje = "Tienes obesidad grado I";
+            mensaje = "Tienes obesidad de grado I";
             binding.MENSAJEtext.setTextColor(getResources().getColor(R.color.orange));
         } else if (resultado >= 35 && resultado < 39.9) {
             mensaje = "Tienes obesidad de grado II";
             binding.MENSAJEtext.setTextColor(getResources().getColor(R.color.rojo));
         } else if (resultado >= 40.0) {
-            mensaje = "Tienes obesidad grado III";
+            mensaje = "Tienes obesidad de grado III";
             binding.MENSAJEtext.setTextColor(getResources().getColor(R.color.purple_500));
         }
         return mensaje;
