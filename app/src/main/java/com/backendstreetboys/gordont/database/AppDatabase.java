@@ -4,12 +4,14 @@ import android.content.Context;
 
 import androidx.room.*;
 
-@Database(entities = {Usuario.class,PesoYAltura.class}, version = 1, exportSchema = false)
+@Database(entities = {Usuario.class,PesoYAltura.class,HorasSueno.class}, version = 2, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
 
     public abstract UsuarioDao userDao();
 
     public abstract PesoYAlturaDao pyaDao();
+
+    public abstract HorasSuenoDao hsDao();
 
     private static volatile AppDatabase INSTANCE;
 
@@ -19,6 +21,7 @@ public abstract class AppDatabase extends RoomDatabase {
                 if (INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                                     AppDatabase.class, "gordont_database")
+                            .fallbackToDestructiveMigration()
                             .allowMainThreadQueries().build();
                 }
             }

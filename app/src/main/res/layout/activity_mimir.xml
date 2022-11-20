@@ -10,143 +10,122 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity"
+        tools:context=".Mimir"
         android:background="@color/light_black">
 
+
         <ImageView
-            android:id="@+id/imageViewJarJar"
-            android:layout_width="654dp"
-            android:layout_height="202dp"
-            android:src="@drawable/headerjarjar"
-            app:layout_constraintBottom_toTopOf="@+id/relativeLayout5"
+            android:id="@+id/imageViewYoda"
+            android:layout_width="355dp"
+            android:layout_height="235dp"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            android:src="@drawable/yoda3"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout3"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.38" />
+            app:layout_constraintVertical_bias="0.301" />
 
         <RelativeLayout
-            android:id="@+id/relativeLayout5"
-            android:layout_width="346dp"
-            android:layout_height="390dp"
+            android:id="@+id/relativeLayout3"
+            android:layout_width="353dp"
+            android:layout_height="350dp"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
             android:background="@drawable/custom_layout"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.715">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:background="@drawable/custom_layout2">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_above="@+id/textView"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="113dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginEnd="116dp"
-                    android:layout_marginBottom="-2dp"
-                    android:background="@drawable/custom_photo"
-                    android:src="@drawable/profilee" />
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="155dp"
-                    android:layout_height="45dp"
-                    android:layout_alignBottom="@+id/textUser"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="102dp"
-                    android:layout_marginEnd="96dp"
-                    android:layout_marginBottom="29dp"
-                    android:fontFamily="@font/open_sans_bold"
-                    android:gravity="center"
-                    android:text="Bienvenid@"
-                    android:textColor="@color/black"
-                    android:textSize="22sp" />
-
-                <TextView
-                    android:id="@+id/textUser"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="107dp"
-                    android:layout_marginTop="137dp"
-                    android:layout_marginEnd="104dp"
-                    android:fontFamily="@font/open_sans_bold"
-                    android:gravity="center"
-                    tools:text="Usuario"
-                    android:textColor="@color/black"
-                    android:textSize="22sp" />
-
-            </RelativeLayout>
+            app:layout_constraintVertical_bias="0.74">
 
             <TextView
-                android:id="@+id/textView2"
-                android:layout_width="182dp"
+                android:id="@+id/textDormir"
+                android:layout_width="179dp"
                 android:layout_height="wrap_content"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="151dp"
-                android:layout_marginBottom="165dp"
-                android:fontFamily="@font/open_sans"
-                android:text="Tu IMC actual es:"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/IMCtext"
-                android:layout_width="341dp"
-                android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="231dp"
-                android:layout_marginEnd="1dp"
-                android:background="@drawable/custom_textview"
-                android:fontFamily="@font/open_sans"
-                android:hint="IMC"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="335dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="9dp"
-                android:layout_marginEnd="2dp"
-                android:layout_marginBottom="99dp"
-                android:fontFamily="@font/open_sans"
-                android:text="Tu estado de salud actual es:"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/MENSAJEtext"
-                android:layout_width="341dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="297dp"
-                android:layout_marginEnd="1dp"
-                android:background="@drawable/custom_textview"
+                android:layout_marginStart="83dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="92dp"
                 android:fontFamily="@font/open_sans_bold"
-                android:hint="Estás muy bueno"
+                android:gravity="center"
+                android:text="Hora de dormir es"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="30sp" />
+
+            <Chronometer
+                android:id="@+id/simpleChronometer"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textDormir"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="103dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginEnd="116dp"
+                android:background="@color/orange"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/textHorasSueno"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="84dp"
+                android:layout_marginTop="125dp"
+                android:layout_marginEnd="91dp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:text="Contabilizar horas de sueño"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/ButtonStopSuenyo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/simpleChronometer"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="201dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="54dp"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/open_sans"
+                android:text="Parar"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/ButtonStartSuenyo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/simpleChronometer"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="54dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="201dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/open_sans"
+                android:text="Empezar"
+                android:textColor="@color/black" />
 
         </RelativeLayout>
 
@@ -174,7 +153,7 @@
                 android:layout_marginTop="6dp"
                 android:layout_marginEnd="331dp"
                 android:layout_marginBottom="3dp"
-                android:background="@drawable/home3_activo"
+                android:background="@drawable/home3"
                 android:fontFamily="@font/open_sans" />
 
             <ImageButton
@@ -225,7 +204,7 @@
                 android:layout_marginTop="6dp"
                 android:layout_marginEnd="89dp"
                 android:layout_marginBottom="3dp"
-                android:background="@drawable/sueno"
+                android:background="@drawable/sueno_activo"
                 android:fontFamily="@font/open_sans" />
 
             <ImageButton
@@ -248,4 +227,6 @@
         </RelativeLayout>
 
     </android.support.constraint.ConstraintLayout>
+
+
 </layout>

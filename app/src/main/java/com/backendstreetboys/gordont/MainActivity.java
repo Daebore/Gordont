@@ -1,6 +1,7 @@
 package com.backendstreetboys.gordont;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -8,143 +9,106 @@ import android.util.Log;
 import com.backendstreetboys.gordont.database.*;
 import com.backendstreetboys.gordont.databinding.ActivityMainBinding;
 
-import java.util.List;
-
 public class MainActivity extends AppCompatActivity {
-    private ActivityMainBinding binding;
 
+    private ActivityMainBinding binding;
     public AppDatabase bd;
     public UsuarioDao userDao;
     public PesoYAlturaDao pyaDao;
 
-    /*
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-
-            setContentView(R.layout.activity_main);
-            setContentView(binding.getRoot());
-
-        }
-
-       */
-    public static final String EL_IMC = "imc";
-    public static final String EL_MENSAJE = "mensaje";
-    public static final String EL_NOMBRE = "nombre";
-
-
-    /*
-     * hola javi
-     * */
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-//        Bundle extras = getIntent().getExtras();
-//        double imc = extras.getDouble(EL_IMC);
-//        String mensaje = extras.getString(EL_MENSAJE);
-//        String nombre = extras.getString(EL_NOMBRE);
-//        String texto_imc = String.valueOf(imc);
-
         recogerDatosBD();
 
+        // Botones de la barra de menú.
         binding.ButtonDietasEjercicios.setOnClickListener(v -> {
-            Log.d("MainActivity", "LLENGO A DIETAS EJERCICIOS");
-          openDietasEjercicios();
-          //  setContentView(R.layout.activity_dietas_ejercicios);
+            openDietasEjercicios();
         });
-
         binding.ButtonModificarPerfil.setOnClickListener(v -> {
-           openModificable();
-           // setContentView(R.layout.activity_modificable);
+            openModificable();
         });
-
-
-
+        binding.ButtonSueno.setOnClickListener(v -> {
+            openSueno();
+        });
+        binding.ButtonBascula.setOnClickListener(v -> {
+            openComparar();
+        });
     }
 
-    public void recogerDatosBD(){
-        // Obtener objetos BD
+    public void recogerDatosBD() {
+        // Obtener objetos BD.
         bd = AppDatabase.getDatabase(getApplicationContext());
         userDao = bd.userDao();
         pyaDao = bd.pyaDao();
 
+        // Sacar datos del usuario y calcular IMC.
         Usuario user = userDao.getAll().get(0);
         PesoYAltura pya = pyaDao.getLatest();
-
-        List<PesoYAltura> historialPya = pyaDao.getAll();
         double imc = operacionIMC(pya.altura, pya.peso);
-        String mensaje = resultadoMensaje(imc);
-        String nombre = user.nombre;
-        String texto_imc = String.valueOf(imc);
 
-        binding.IMCtext.setText(texto_imc);
-        binding.MENSAJEtext.setText(mensaje);
-        binding.textUser.setText(nombre);
-    }
-
-    public void openModificable(){
-
-        Intent intent = new Intent(this, Modificable.class);
-
-
-
-        startActivity(intent);
-
-    }
-
-    public void openDietasEjercicios(){
-
-        Intent intent = new Intent(this, DietasEjercicios.class);
-
-
-
-        startActivity(intent);
-
+        // Mostrar los datos en sus respectivos campos.
+        binding.IMCtext.setText(String.valueOf(imc));
+        binding.MENSAJEtext.setText(resultadoMensaje(imc));
+        binding.textUser.setText(user.nombre);
     }
 
     public double operacionIMC(double doubleAltura, double doublePeso) {
+        double alturaCuadrado = doubleAltura * doubleAltura;
+        double resultado = doublePeso / alturaCuadrado;
+        double resultadoF = Math.round(resultado * 100) / 100;
 
         System.out.println(" El peso es de" + doublePeso);
-
         System.out.println("La altura es de " + doubleAltura);
-
-        double alturaCuadrado = doubleAltura * doubleAltura;
-
         System.out.println("La altura ^2 es " + alturaCuadrado);
-
-        double resultado = doublePeso / alturaCuadrado;
-
         System.out.println("El resultado es de " + resultado);
-
-
-        return resultado;
-
+        return resultadoF;
     }
-
 
     public String resultadoMensaje(double resultado) {
         String mensaje = null;
-
         if (resultado < 18.5) {
-            mensaje = "Tu estas gordon't ";
-        } else if (resultado > 18.5 && resultado < 24.9) {
-            mensaje = "Tu estas chad ";
-        } else if (resultado > 25.0 && resultado < 29.9) {
-            mensaje = "Tu estas gordo ";
-        } else if (resultado > 30.0 && resultado < 39.9) {
-            mensaje = "Tu estas MUY GORDO ";
-        } else if (resultado > 40.0) {
-            mensaje = "no se como coño estas vivo ";
+            mensaje = "Estás debajo de tu peso ideal";
+            binding.MENSAJEtext.setTextColor(getResources().getColor(R.color.teal_200));
+        } else if (resultado >= 18.5 && resultado < 24.9) {
+            mensaje = "Estás en tu peso ideal";
+            binding.MENSAJEtext.setTextColor(getResources().getColor(R.color.verde));
+        } else if (resultado >= 25.0 && resultado < 29.9) {
+            mensaje = "Tienes sobreso";
+            binding.MENSAJEtext.setTextColor(getResources().getColor(R.color.amarillo));
+        } else if (resultado >= 30.0 && resultado < 34.9) {
+            mensaje = "Tienes obesidad grado I";
+            binding.MENSAJEtext.setTextColor(getResources().getColor(R.color.orange));
+        } else if (resultado >= 35 && resultado < 39.9) {
+            mensaje = "Tienes obesidad de grado II";
+            binding.MENSAJEtext.setTextColor(getResources().getColor(R.color.rojo));
+        } else if (resultado >= 40.0) {
+            mensaje = "Tienes obesidad grado III";
+            binding.MENSAJEtext.setTextColor(getResources().getColor(R.color.purple_500));
         }
-
         return mensaje;
     }
 
+    public void openModificable() {
+        Intent intent = new Intent(this, Modificable.class);
+        startActivity(intent);
+    }
+
+    public void openDietasEjercicios() {
+        Intent intent = new Intent(this, DietasEjercicios.class);
+        startActivity(intent);
+    }
+
+    public void openSueno() {
+        Intent intent = new Intent(this, Mimir.class);
+        startActivity(intent);
+    }
+
+    public void openComparar() {
+        Intent intent = new Intent(this, ComparaPeso.class);
+        startActivity(intent);
+    }
 
 }

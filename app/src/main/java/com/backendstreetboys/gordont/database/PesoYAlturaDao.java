@@ -1,13 +1,9 @@
 package com.backendstreetboys.gordont.database;
 
-import android.arch.lifecycle.LiveData;
-
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
-
-import java.sql.Date;
 import java.util.List;
 
 @Dao

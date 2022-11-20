@@ -14,4 +14,9 @@
     <color name="cream">#ffb87e</color>
     <color name="light_black">#171616</color>
 
+
+    <color name="rojo">#FF0000</color>
+    <color name="amarillo">#FFEB3B</color>
+    <color name="verde">#4CAF50</color>
+
 </resources>
