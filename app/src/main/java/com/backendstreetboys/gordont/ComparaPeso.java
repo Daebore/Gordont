@@ -82,26 +82,10 @@ public class ComparaPeso extends AppCompatActivity {
         HorasSuenoDao hsDao = bd.hsDao();
         historialPya = (ArrayList<PesoYAltura>) pyaDao.getAll();
         historialHs = (ArrayList<HorasSueno>) hsDao.getAll();
-        posPya = historialPya.size() - 1;
-        posHs = historialHs.size() - 1;
-
-        // Sacar datos del usuario.
-//        System.out.println("Imprimiendo historialPya: ");
-//        for (PesoYAltura pya : historialPya) {
-//            LocalDateTime ldt = LocalDateTime.ofEpochSecond(pya.fecha, 0, zoffset);
-//            System.out.println("pya: " + pya.altura + " " + pya.peso + " " + ldt.toString());
-//        }
-//        System.out.println("Imprimiendo historialHs: ");
-//        for (HorasSueno hs : historialHs) {
-//            LocalDateTime ldtInicio = LocalDateTime.ofEpochSecond(hs.momentoInicio, 0, zoffset);
-//            LocalDateTime ldtFin = LocalDateTime.ofEpochSecond(hs.momentoFin, 0, zoffset);
-//            System.out.println("hs: " + ldtInicio.toString() + " " + ldtFin.toString() + " " +
-//                    TimeUnit.MILLISECONDS.toHours(hs.tiempoSueno) + ":"
-//                    + TimeUnit.MILLISECONDS.toMinutes(hs.tiempoSueno) + ":"
-//                    + TimeUnit.MILLISECONDS.toSeconds(hs.tiempoSueno));
-//        }
 
         // Mostrar los datos en sus respectivos campos.
+        posPya = historialPya.size() - 1;
+        posHs = historialHs.size() - 1;
         binding.editRPeso.setText(formatPeso(historialPya.get(posPya)));
         binding.editHSuenio.setText(formatSueno(historialHs.get(posHs)));
     }
