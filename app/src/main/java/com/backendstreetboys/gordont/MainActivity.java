@@ -9,8 +9,6 @@ import android.util.Log;
 import com.backendstreetboys.gordont.database.*;
 import com.backendstreetboys.gordont.databinding.ActivityMainBinding;
 
-import java.util.List;
-
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
