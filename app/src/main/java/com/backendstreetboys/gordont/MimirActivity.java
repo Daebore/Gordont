@@ -10,7 +10,7 @@ import com.backendstreetboys.gordont.database.HorasSueno;
 import com.backendstreetboys.gordont.databinding.ActivityMimirBinding;
 import java.time.Instant;
 
-public class Mimir extends AppCompatActivity {
+public class MimirActivity extends AppCompatActivity {
 
     private ActivityMimirBinding binding;
     boolean isChronometerRunning = false;
@@ -75,22 +75,22 @@ public class Mimir extends AppCompatActivity {
     }
 
     public void openMain() {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
 
     public void openModificable() {
-        Intent intent = new Intent(this, Modificable.class);
+        Intent intent = new Intent(this, ActualizarPyaActivity.class);
         startActivity(intent);
     }
 
     public void openComparar() {
-        Intent intent = new Intent(this, ComparaPeso.class);
+        Intent intent = new Intent(this, RegistrosActivity.class);
         startActivity(intent);
     }
 
     public void openDietasEjercicios() {
-        Intent intent = new Intent(this, DietasEjercicios.class);
+        Intent intent = new Intent(this, DietasEjerciciosActivity.class);
         startActivity(intent);
     }
 

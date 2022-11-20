@@ -15,11 +15,11 @@ import com.backendstreetboys.gordont.database.HorasSueno;
 import com.backendstreetboys.gordont.database.HorasSuenoDao;
 import com.backendstreetboys.gordont.database.PesoYAltura;
 import com.backendstreetboys.gordont.database.PesoYAlturaDao;
-import com.backendstreetboys.gordont.databinding.ActivityComparaPesoBinding;
+import com.backendstreetboys.gordont.databinding.ActivityRegistrosBinding;
 
-public class ComparaPeso extends AppCompatActivity {
+public class RegistrosActivity extends AppCompatActivity {
 
-    private ActivityComparaPesoBinding binding;
+    private ActivityRegistrosBinding binding;
     ZoneOffset zoffset = ZoneId.systemDefault().getRules().getOffset(Instant.now());
     ArrayList<PesoYAltura> historialPya;
     ArrayList<HorasSueno> historialHs;
@@ -29,7 +29,7 @@ public class ComparaPeso extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityComparaPesoBinding.inflate(getLayoutInflater());
+        binding = ActivityRegistrosBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         recogerDatosBD();
 
@@ -111,22 +111,22 @@ public class ComparaPeso extends AppCompatActivity {
     }
 
     public void openModificable() {
-        Intent intent = new Intent(this, Modificable.class);
+        Intent intent = new Intent(this, ActualizarPyaActivity.class);
         startActivity(intent);
     }
 
     public void openDietasEjercicios() {
-        Intent intent = new Intent(this, DietasEjercicios.class);
+        Intent intent = new Intent(this, DietasEjerciciosActivity.class);
         startActivity(intent);
     }
 
     public void openSueno() {
-        Intent intent = new Intent(this, Mimir.class);
+        Intent intent = new Intent(this, MimirActivity.class);
         startActivity(intent);
     }
 
     public void openHome() {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
 

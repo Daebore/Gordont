@@ -1,17 +1,15 @@
 package com.backendstreetboys.gordont;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 
 import com.backendstreetboys.gordont.database.*;
-import com.backendstreetboys.gordont.databinding.ActivityMainBinding;
+import com.backendstreetboys.gordont.databinding.ActivityHomeBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
-    private ActivityMainBinding binding;
+    private ActivityHomeBinding binding;
     public AppDatabase bd;
     public UsuarioDao userDao;
     public PesoYAlturaDao pyaDao;
@@ -19,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        binding = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         recogerDatosBD();
 
@@ -92,22 +90,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openModificable() {
-        Intent intent = new Intent(this, Modificable.class);
+        Intent intent = new Intent(this, ActualizarPyaActivity.class);
         startActivity(intent);
     }
 
     public void openDietasEjercicios() {
-        Intent intent = new Intent(this, DietasEjercicios.class);
+        Intent intent = new Intent(this, DietasEjerciciosActivity.class);
         startActivity(intent);
     }
 
     public void openSueno() {
-        Intent intent = new Intent(this, Mimir.class);
+        Intent intent = new Intent(this, MimirActivity.class);
         startActivity(intent);
     }
 
     public void openComparar() {
-        Intent intent = new Intent(this, ComparaPeso.class);
+        Intent intent = new Intent(this, RegistrosActivity.class);
         startActivity(intent);
     }
 
