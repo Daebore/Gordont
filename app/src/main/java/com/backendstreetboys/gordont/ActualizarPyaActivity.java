@@ -9,21 +9,21 @@ import android.widget.Toast;
 import com.backendstreetboys.gordont.database.AppDatabase;
 import com.backendstreetboys.gordont.database.PesoYAltura;
 import com.backendstreetboys.gordont.database.PesoYAlturaDao;
-import com.backendstreetboys.gordont.databinding.ActivityModificableBinding;
+import com.backendstreetboys.gordont.databinding.ActivityActualizarPyaBinding;
 import com.backendstreetboys.gordont.util.AppToast;
 
 import java.time.Instant;
 
-public class Modificable extends AppCompatActivity {
+public class ActualizarPyaActivity extends AppCompatActivity {
 
-    private ActivityModificableBinding binding;
+    private ActivityActualizarPyaBinding binding;
     public AppDatabase bd;
     public PesoYAlturaDao pyaDao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityModificableBinding.inflate(getLayoutInflater());
+        binding = ActivityActualizarPyaBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         // Botón de actualizar datos de peso y altura.
@@ -71,22 +71,22 @@ public class Modificable extends AppCompatActivity {
     }
 
     public void openMain() {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
 
     public void openSueno() {
-        Intent intent = new Intent(this, Mimir.class);
+        Intent intent = new Intent(this, MimirActivity.class);
         startActivity(intent);
     }
 
     public void openComparar() {
-        Intent intent = new Intent(this, ComparaPeso.class);
+        Intent intent = new Intent(this, RegistrosActivity.class);
         startActivity(intent);
     }
 
     public void openDietasEjercicios() {
-        Intent intent = new Intent(this, DietasEjercicios.class);
+        Intent intent = new Intent(this, DietasEjerciciosActivity.class);
         startActivity(intent);
     }
 

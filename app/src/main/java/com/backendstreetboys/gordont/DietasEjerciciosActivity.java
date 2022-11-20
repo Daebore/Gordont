@@ -3,26 +3,13 @@ package com.backendstreetboys.gordont;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
-import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.backendstreetboys.gordont.databinding.ActivityDietasEjerciciosBinding;
-import com.backendstreetboys.gordont.databinding.ActivityMainBinding;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
-
-import javax.net.ssl.HttpsURLConnection;
-
-public class DietasEjercicios extends AppCompatActivity {
+public class DietasEjerciciosActivity extends AppCompatActivity {
 
     private ActivityDietasEjerciciosBinding binding;
     ImageButton button;
@@ -66,7 +53,7 @@ public class DietasEjercicios extends AppCompatActivity {
     }
 
     public void openComparar() {
-        Intent intent = new Intent(this, ComparaPeso.class);
+        Intent intent = new Intent(this, RegistrosActivity.class);
         startActivity(intent);
     }
 
@@ -78,17 +65,17 @@ public class DietasEjercicios extends AppCompatActivity {
 
 
     public void openModificable() {
-        Intent intent = new Intent(this, Modificable.class);
+        Intent intent = new Intent(this, ActualizarPyaActivity.class);
         startActivity(intent);
     }
 
     public void openMain() {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
 
     public void openSueno() {
-        Intent intent = new Intent(this, Mimir.class);
+        Intent intent = new Intent(this, MimirActivity.class);
         startActivity(intent);
     }
 

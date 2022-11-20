@@ -13,21 +13,21 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".ComparaPeso"
+            android:name=".RegistrosActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Mimir"
+            android:name=".MimirActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".DietasEjercicios"
+            android:name=".DietasEjerciciosActivity"
             android:exported="false"
             android:screenOrientation="portrait">
             <meta-data
@@ -35,7 +35,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Modificable"
+            android:name=".ActualizarPyaActivity"
             android:exported="false"
             android:screenOrientation="portrait">
             <meta-data
@@ -43,7 +43,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Quest_view"
+            android:name=".QuestViewActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -57,7 +57,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".HomeActivity"
             android:exported="false"
             android:screenOrientation="portrait">
             <meta-data

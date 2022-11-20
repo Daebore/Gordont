@@ -2,13 +2,9 @@ package com.backendstreetboys.gordont;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 //import androidx.annotation.RequiresApi;
@@ -18,13 +14,9 @@ import com.backendstreetboys.gordont.database.*;
 import com.backendstreetboys.gordont.util.*;
 import com.backendstreetboys.gordont.databinding.ActivityQuestViewBinding;
 
-import java.sql.Date;
 import java.time.Instant;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
 
-public class Quest_view extends AppCompatActivity {
+public class QuestViewActivity extends AppCompatActivity {
 
     public ActivityQuestViewBinding binding;
     public AppDatabase bd;
@@ -37,8 +29,8 @@ public class Quest_view extends AppCompatActivity {
         userDao = bd.userDao();
 
         if (!userDao.getAll().isEmpty()) {
-            startActivity(new Intent(this, MainActivity.class));
-            setContentView(R.layout.activity_main);
+            startActivity(new Intent(this, HomeActivity.class));
+            setContentView(R.layout.activity_home);
         } else {
             binding = ActivityQuestViewBinding.inflate(getLayoutInflater());
             setContentView(binding.getRoot());
@@ -70,8 +62,8 @@ public class Quest_view extends AppCompatActivity {
                         guardarEnBD(nombre, doubleAltura, doublePeso, intEdad, stringSexo);
                         MediaPlayer mp = MediaPlayer.create(this, R.raw.hellothere);
                         mp.start();
-                        startActivity(new Intent(this, MainActivity.class));
-                        setContentView(R.layout.activity_main);
+                        startActivity(new Intent(this, HomeActivity.class));
+                        setContentView(R.layout.activity_home);
                     }
                 }
             });
