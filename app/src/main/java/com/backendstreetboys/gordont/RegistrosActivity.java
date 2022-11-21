@@ -95,11 +95,15 @@ public class RegistrosActivity extends AppCompatActivity {
         }
     }
 
+    public String formatHora(int hour, int minute){
+        return String.format("%02d:%02d",hour, minute);
+    }
+
     public String formatPeso(PesoYAltura pya) {
         LocalDateTime ldtPya = pya.getFechaLDT(zoffset);
         return pya.peso + "kg, " + pya.altura + "m (" + ldtPya.getDayOfMonth() + "/"
-                + ldtPya.getMonthValue() + "/" + ldtPya.getYear() + ", " + ldtPya.getHour() + ":"
-                + ldtPya.getMinute() + ")";
+                + ldtPya.getMonthValue() + "/" + ldtPya.getYear() + ", "
+                + formatHora(ldtPya.getHour(), ldtPya.getMinute()) + ")";
     }
 
     public String formatSueno(HorasSueno hs) {
@@ -110,9 +114,9 @@ public class RegistrosActivity extends AppCompatActivity {
                 - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(hs.tiempoSueno));
         long seconds = TimeUnit.MILLISECONDS.toSeconds(hs.tiempoSueno)
                 - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(hs.tiempoSueno));
-        return hours + "h " + minutes + "min " + seconds + "s, inicio: "
-                + ldtHsInicio.getHour() + ":" + ldtHsInicio.getMinute() + ", fin: "
-                + ldtHsFin.getHour() + ":" + ldtHsFin.getMinute();
+        return hours + "h " + minutes + "min " + seconds + "s, de "
+                + formatHora(ldtHsInicio.getHour(), ldtHsInicio.getMinute()) + " a "
+                + formatHora(ldtHsFin.getHour(), ldtHsFin.getMinute());
     }
 
     public void openModificable() {
