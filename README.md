@@ -15,6 +15,7 @@
   Gordont has a lot of Star Wars references because, as a software developers, we are really into the Star Wars universe. 
 </p>
 
+
 ## 	:page_facing_up: Features 
 - Personal tracking of the user's weight :running:
 
@@ -23,6 +24,9 @@
 - Provides downloadable diets and exercise rutines :apple:
 
 - Allows the users to monitor their daily hours of sleep :zzz:
+
+- Very easy to use :baby:
+
 
 ## :man: :woman: Logging in
 <p align="center">
@@ -34,6 +38,7 @@ The first time you use Gordon't, you will have to fill a questionnaire with your
 This data will be saved in a database.
 
 This page only appears once, so you do not have to refill it each time you use the app.
+
 
 ## :house: Main page
 <p align="center">
@@ -49,6 +54,7 @@ Beneath, there is a textbox with personal data about the user's health. A messag
   - Orange - Overweight class 1. 
   - Red - Overweight class 2. 
   - Purple - Overweight class 3. 
+
 
 ## :pencil2: Changing data
 <p align="center">
@@ -70,6 +76,7 @@ In this page you are allowed to update your personal data. It's important to tak
 
 Gordon't will let the user to download PDFs with low calorie diets and exercise rutines that will help the user to lose weight faster and in a easier way.
 
+
 ## :zzz: :alarm_clock: Sleep hours counter
 <p align="center">
   <img src="https://github.com/Daebore/Images/blob/main/Fotos%20Gordont/gordont5.png?raw=true" width="400"/>
@@ -81,6 +88,7 @@ It is important to sleep an average of 8-9 hours per day.
 Gordon't will allow its users to record the user's hours of sleep and save the data in a database.
 To record the hours, the application uses a chronometer.
 
+
 ## :bar_chart: Evolution
 <p align="center">
   <img src="https://github.com/Daebore/Images/blob/main/Fotos%20Gordont/gordont6.png?raw=true" width="400"/>
@@ -90,4 +98,4 @@ Last, but no least, the user will be able to see if he/she have lost or gain wei
 
 Beneath, the user can do exactly the same with the daily hours of sleep, to check if he/she is sleeping better or worse over the days.
 
-All this data is saved in a database, you the user does not have to worry about the queantity of data and memory.
+All this data is saved in a database, so the user does not have to worry about the queantity of data and memory.
