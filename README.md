@@ -5,6 +5,8 @@
 </p>
 <p align="center">
   Godont is an Android application project for an Android Development subject which has been programmed by a three people group.
+</p>
+<p align="center">
   This application´s purpose is to help people to lose weight.
 </p>
 <p align="center">
