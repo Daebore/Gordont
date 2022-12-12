@@ -4,7 +4,7 @@
   <img src="https://github.com/Daebore/Images/blob/main/Fotos%20Gordont/iconoF.png?raw=true" alt="drawing" width="300"/>
 </p>
 <p align="center">
-  Godont is an Android application project for an Android Development subject.
+  Godont is an Android application project for an Android Development subject which has been programmed by a three people group.
   This application´s purpose is to help people to lose weight.
 </p>
 <p align="center">
