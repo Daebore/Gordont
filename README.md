@@ -1,10 +1,10 @@
-# Gordont
+# Gordon't
 
 <p align="center">
   <img src="https://github.com/Daebore/Images/blob/main/Fotos%20Gordont/iconoF.png?raw=true" alt="drawing" width="300"/>
 </p>
 <p align="center">
-  Godont is an Android application project for an Android Development subject which has been programmed by a three people group.
+  Gordon't is an Android application project for an Android Development subject which has been programmed by a three people group.
 </p>
 <p align="center">
   This application´s purpose is to help people to lose weight.
@@ -96,7 +96,7 @@ To record the hours, the application uses a chronometer.
   <img src="https://github.com/Daebore/Images/blob/main/Fotos%20Gordont/gordont6.png?raw=true" width="290"/>
 </p>
 
-Last, but no least, the user will be able to see if he/she have lost or gain weight over the time. By tuching the arrow bottons, you user can see a record with the differents weights of the user alongside the date it has been registered or modified.
+Last, but no least, the user will be able to see if he/she have lost or gain weight over the time. By touching the arrow bottons, you user can see a record with the differents weights of the user alongside the date it has been registered or modified.
 
 Beneath, the user can do exactly the same with the daily hours of sleep, to check if he/she is sleeping better or worse over the days.
 
