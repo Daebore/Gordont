@@ -101,3 +101,10 @@ Last, but no least, the user will be able to see if he/she have lost or gain wei
 Beneath, the user can do exactly the same with the daily hours of sleep, to check if he/she is sleeping better or worse over the days.
 
 All this data is saved in a database, so the user does not have to worry about the quantity of data and memory.
+
+## Authors ✍️
+https://github.com/Daebore
+<br>
+https://github.com/amsamu
+<br>
+https://github.com/AlonsoRial
