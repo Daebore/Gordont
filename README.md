@@ -102,7 +102,7 @@ Beneath, the user can do exactly the same with the daily hours of sleep, to chec
 
 All this data is saved in a database, so the user does not have to worry about the quantity of data and memory.
 
-## Authors ✍️
+## ✍️ Authors
 https://github.com/Daebore
 <br>
 https://github.com/amsamu
