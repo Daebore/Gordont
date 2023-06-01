@@ -29,6 +29,7 @@
 
 - Very easy to use :baby:
 
+<p align="right">(<a href="#top">Back to top</a>)</p>
 
 ## :man: :woman: Logging in
 <p align="center">
@@ -41,6 +42,7 @@ This data will be saved in a database.
 
 This page only appears once, so you do not have to refill it each time you use the app.
 
+<p align="right">(<a href="#top">Back to top</a>)</p>
 
 ## :house: Main page
 <p align="center">
@@ -57,6 +59,7 @@ Beneath, there is a textbox with personal data about the user's health. A messag
   - Red - Overweight class 2. 
   - Purple - Overweight class 3. 
 
+<p align="right">(<a href="#top">Back to top</a>)</p>
 
 ## :pencil2: Changing data
 <p align="center">
@@ -71,6 +74,8 @@ Do you want to update your personal data?
 
 In this page you are allowed to update your personal data. It's important to take into consideration that by changing this data, the information given in the main page may change too.
 
+<p align="right">(<a href="#top">Back to top</a>)</p>
+
 ## :floppy_disk: Downloadable content
 <p align="center">
   <img src="https://github.com/Daebore/Images/blob/main/Fotos%20Gordont/gordont4.png?raw=true" width="290"/>
@@ -78,6 +83,7 @@ In this page you are allowed to update your personal data. It's important to tak
 
 Gordon't will let the user to download PDFs with low calorie diets and exercise rutines that will help the user to lose weight faster and in a easier way.
 
+<p align="right">(<a href="#top">Back to top</a>)</p>
 
 ## :zzz: :alarm_clock: Sleep hours counter
 <p align="center">
@@ -90,6 +96,7 @@ It is important to sleep an average of 8-9 hours per day.
 Gordon't will allow its users to record the user's hours of sleep and save the data in a database.
 To record the hours, the application uses a chronometer.
 
+<p align="right">(<a href="#top">Back to top</a>)</p>
 
 ## :bar_chart: Evolution
 <p align="center">
@@ -102,9 +109,13 @@ Beneath, the user can do exactly the same with the daily hours of sleep, to chec
 
 All this data is saved in a database, so the user does not have to worry about the quantity of data and memory.
 
+<p align="right">(<a href="#top">Back to top</a>)</p>
+
 ## ✍️ Authors
 https://github.com/Daebore
 <br>
 https://github.com/amsamu
 <br>
 https://github.com/AlonsoRial
+
+<p align="right">(<a href="#top">Back to top</a>)</p>
