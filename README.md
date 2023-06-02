@@ -33,7 +33,7 @@
 
 ## :man: :woman: Logging in
 <p align="center">
-  <img src="https://github.com/Daebore/Images/blob/main/Fotos%20Gordont/gordont1.png?raw=true" alt="drawing" width="290"/>
+  <img src="https://github.com/Daebore/Images/blob/main/Fotos%20Gordont/gordont1.png?raw=true" alt="drawing" width="225" height="440"/>
 </p>
 
 The first time you use Gordon't, you will have to fill a questionnaire with your personal data. 
@@ -46,7 +46,7 @@ This page only appears once, so you do not have to refill it each time you use t
 
 ## :house: Main page
 <p align="center">
-  <img src="https://github.com/Daebore/Images/blob/main/Fotos%20Gordont/gordont2.png?raw=true" alt="drawing" width="290"/>
+  <img src="https://github.com/Daebore/Images/blob/main/Fotos%20Gordont/gordont2.png?raw=true" alt="drawing" width="225" height="440"/>
 </p>
 
 This is the main page where the user's body mass index will be showed.
@@ -63,7 +63,7 @@ Beneath, there is a textbox with personal data about the user's health. A messag
 
 ## :pencil2: Changing data
 <p align="center">
-  <img src="https://github.com/Daebore/Images/blob/main/Fotos%20Gordont/gordont3.png?raw=true" alt="drawing" width="290"/>
+  <img src="https://github.com/Daebore/Images/blob/main/Fotos%20Gordont/gordont3.png?raw=true" alt="drawing" width="225" height="440"/>
 </p>
 
 Have you lost some weight over the last weeks?
@@ -78,7 +78,7 @@ In this page you are allowed to update your personal data. It's important to tak
 
 ## :floppy_disk: Downloadable content
 <p align="center">
-  <img src="https://github.com/Daebore/Images/blob/main/Fotos%20Gordont/gordont4.png?raw=true" width="290"/>
+  <img src="https://github.com/Daebore/Images/blob/main/Fotos%20Gordont/gordont4.png?raw=true" width="225" height="440"/>
 </p>
 
 Gordon't will let the user to download PDFs with low calorie diets and exercise rutines that will help the user to lose weight faster and in a easier way.
@@ -87,7 +87,7 @@ Gordon't will let the user to download PDFs with low calorie diets and exercise 
 
 ## :zzz: :alarm_clock: Sleep hours counter
 <p align="center">
-  <img src="https://github.com/Daebore/Images/blob/main/Fotos%20Gordont/gordont5.png?raw=true" width="290"/>
+  <img src="https://github.com/Daebore/Images/blob/main/Fotos%20Gordont/gordont5.png?raw=true" width="225" height="440"/>
 </p>
 
 Do you know that sleeping well allows people to lose weight faster and improve their health?
@@ -100,7 +100,7 @@ To record the hours, the application uses a chronometer.
 
 ## :bar_chart: Evolution
 <p align="center">
-  <img src="https://github.com/Daebore/Images/blob/main/Fotos%20Gordont/gordont6.png?raw=true" width="290"/>
+  <img src="https://github.com/Daebore/Images/blob/main/Fotos%20Gordont/gordont6.png?raw=true" width="225" height="440"/>
 </p>
 
 Last, but no least, the user will be able to see if he/she have lost or gain weight over the time. By touching the arrow bottons, you user can see a record with the differents weights of the user alongside the date it has been registered or modified.
